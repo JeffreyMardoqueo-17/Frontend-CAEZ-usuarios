@@ -2,7 +2,7 @@
 
 import React from 'react';
 import './Home.css';
-import InicioAbajo from '../components/InicioAbajo';
+import InicioAbajo from '../components/InicioAbajo/InicioAbajo';
 const Home = () => {
   return (
     <div>
