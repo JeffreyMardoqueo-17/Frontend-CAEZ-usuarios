@@ -1,3 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --primary:#fff;
+  --bg:#020240;
+  --bg2:#4D51B3;
+  --text1:#000;
+  --text2:#ffff;
+  --border:#f9ce0f;
+}
+
 .App {
   text-align: center;
   margin: 0;

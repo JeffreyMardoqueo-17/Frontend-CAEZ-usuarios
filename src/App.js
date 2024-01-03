@@ -1,10 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import Home from './pages/Home';
+import Menu from './components/MENU/Menu';
 function App() {
   return (
     <div className="App">
-      <Home />
+      <Menu />
     </div>
   );
 }
