@@ -10,7 +10,8 @@ nav {
     background: var(--bg);
     height: 80px;
     width: 100%;
-    border-bottom: 10px solid var(--border);;
+    border-bottom: 10px solid var(--border);
+    ;
 }
 
 .enlace {
@@ -61,22 +62,42 @@ li a:hover {
     cursor: pointer;
     display: none;
 }
-.checkbtn:hover{
+
+.checkbtn:hover {
     color: var(--border);
 }
 
 #check {
     display: none;
 }
-.icono{
+
+.icono {
     float: right;
     height: 80px;
 
 
 }
+
 ul.show-menu {
     display: block;
 }
+
+/* Otros estilos existentes */
+
+.menu-icon,
+.close-icon {
+    float: right;
+    height: 80px;
+    margin-right: 20px;
+    /* Ajusta según sea necesario */
+}
+
+.closebtn {
+    display: none;
+}
+
+/* Resto de tus estilos */
+
 section {
     /* background: url(fondo.jpg) no-repeat; */
     background-size: cover;
