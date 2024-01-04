@@ -49,8 +49,9 @@ nav ul li a {
 }
 
 li a:hover {
-    background: var(--bg2);
+    background: var(--border);
     transition: .5s;
+    color: var(--bg);
 }
 
 .checkbtn {
@@ -97,13 +98,6 @@ ul.show-menu {
 }
 
 /* Resto de tus estilos */
-
-section {
-    /* background: url(fondo.jpg) no-repeat; */
-    background-size: cover;
-    background-position: center center;
-    height: calc(100vh - 80px);
-}
 
 @media (max-width: 952px) {
     .enlace {

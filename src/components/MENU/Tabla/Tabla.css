@@ -1,0 +1,33 @@
+.Table-contenedor{
+    padding: 0 10%;
+    margin: 40px auto 0;
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table thead{
+    background: var(--bg);
+    color: var(--text2);
+}
+.table thead tr th{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.35px;
+    color: var(--text2);
+    opacity: 1;
+    padding: 12px;
+    vertical-align: top;
+    border: solid 2px var(--border);
+    text-transform: uppercase;
+}
+.table tbody tr td{
+    font-size: 17px;
+    letter-spacing: 0.35px;
+    font-weight: normal;
+    color:var(--bg);
+    background-color: var(--gris);
+    padding: 8px;
+    text-align: center;
+    border: 1px solid var(--border);
+}
