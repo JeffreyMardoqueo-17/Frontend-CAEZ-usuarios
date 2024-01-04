@@ -10,16 +10,20 @@ const Tabla = () => {
                         <th>Nombre completo</th>
                         <th>Grado</th>
                         <th>Meses pagados</th>
-                        <th>#</th>
+                        <th>Descargar Inform</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>1234</td>
-                        <td>Jefrey Mardoqueo Jimenez Santos</td>
-                        <td>Sexto Grado</td>
-                        <td>7</td>
-                        <td><a href='#' className='btn'>Descargar PDF</a></td>
+                        <td data-label="NIE">1234</td>
+                        <td data-label="NOMBRE COMPLETO">Jefrey Mardoqueo Jimenez Santos</td>
+                        <td data-label="GRADO">Sexto Grado</td>
+                        <td data-label="MESES PAGADOS">7</td>
+                        <td data-label="DESCARGAR INFORME">
+                            <button>
+                                Descargar PDF
+                            </button>
+                        </td>
 
                     </tr>
 

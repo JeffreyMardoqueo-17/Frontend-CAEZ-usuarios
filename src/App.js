@@ -7,6 +7,10 @@ function App() {
     <div className="App">
       <Menu />
       <Tabla />
+      <Tabla />
+      <Tabla />
+      <Tabla />
+      <Tabla />
     </div>
   );
 }
