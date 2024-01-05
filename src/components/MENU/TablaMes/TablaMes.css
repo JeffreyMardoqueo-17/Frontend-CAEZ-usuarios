@@ -1,0 +1,124 @@
+.Table-contenedor {
+    padding: 0 10%;
+    margin: 40px auto 0;
+
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.table thead {
+    background: var(--bgG);
+    color: var(--text2);
+}
+
+.table thead tr th {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.35px;
+    color: var(--text2);
+    opacity: 1;
+    padding: 12px;
+    vertical-align: top;
+    border: solid 2px var(--bg);
+    text-transform: uppercase;
+}
+
+.table tbody tr td {
+    font-size: 17px;
+    letter-spacing: 0.35px;
+    font-weight: normal;
+    color: var(--bg);
+    background-color: rgb(225, 242, 255);
+    padding: 8px;
+    text-align: center;
+    border: 1px solid var(--bg);
+}
+
+button {
+    width: 80%;
+    height: 50px;
+    border: unset;
+    border-radius: 15px;
+    color: var(--text2);
+    z-index: 1;
+    background: var(--bg);
+    position: relative;
+    font-weight: 1000;
+    font-size: 13px;
+    border: 2px solid var(--border);
+    transition: all 250ms;
+    overflow: hidden;
+    margin-left: 0;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: var(--border);
+    z-index: -1;
+    transition: all 250ms
+}
+
+button:hover {
+    color: var(--bg);
+    border: 1px solid var(--bg);
+}
+
+button:hover::before {
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .table thead {
+        display: none;
+    }
+
+    .table,
+    .table tbody,
+    .table tr,
+    .table td {
+        display: block;
+        width: 100%;
+    }
+
+    .table tr {
+        margin-bottom: 15px;
+    }
+
+    .table tbody tr td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    .table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-size: 14px;
+        text-align: left;
+        border-right: 1px solid var(--bg);
+        box-sizing: border-box;
+        font-weight: bold;
+    }
+
+    /* Opcional: agregar fondo de color en filas pares */
+    .table td:nth-child(even)::before {
+        font-weight: bold;
+    }
+}
