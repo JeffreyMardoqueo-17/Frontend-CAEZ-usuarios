@@ -15,7 +15,7 @@ const Tabla = () => {
                 </thead>
                 <tbody>
                     <tr>
-                        <td data-label="NIE">1234</td>
+                        <td data-label="NIE">123564</td>
                         <td data-label="NOMBRE COMPLETO">Jefrey Mardoqueo Jimenez Santos</td>
                         <td data-label="GRADO">Sexto Grado</td>
                         <td data-label="MESES PAGADOS">7</td>
