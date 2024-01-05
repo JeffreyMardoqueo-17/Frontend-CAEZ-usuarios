@@ -1,5 +1,27 @@
 import React from 'react';
 import './Tabla.css'
+import { jsPDF } from "jspdf";
+
+const Alumno = {
+    nie: "123456789",
+    nombre: "Jeffrey Mardoqueo Jimenez Santos",
+    grado: "noveno grado",
+    mesesP: "7",
+
+}
+
+const GenerarPDF = ()=>{
+    const doc = new jsPDF();
+
+    doc.text(`DATOS DEL ALUMNO`, 95,20);
+    doc.text(`NIE:  ${Alumno.nie}`, 10, 20);
+    doc.text(`Nombre completo: ${Alumno.nombre}`, 10, 40);
+    doc.text(`Grado: ${Alumno.grado}`,10, 30);
+    doc.text(`Meses pagados:${Alumno.mesesP}`, 10, 20);
+
+    //guardar el PDF con un nombre Especifico
+    doc.save(`Informe_${Alumno.nombre}_NIE${Alumno.nie}`);
+}
 const Tabla = () => {
     return (
         <div className='Table-contenedor'>
@@ -15,18 +37,17 @@ const Tabla = () => {
                 </thead>
                 <tbody>
                     <tr>
-                        <td data-label="NIE">123564</td>
-                        <td data-label="NOMBRE COMPLETO">Jefrey Mardoqueo Jimenez Santos</td>
-                        <td data-label="GRADO">Sexto Grado</td>
-                        <td data-label="MESES PAGADOS">7</td>
+                        <td data-label="NIE">{Alumno.nie}</td>
+                        <td data-label="NOMBRE COMPLETO">{Alumno.nombre}</td>
+                        <td data-label="GRADO">{Alumno.grado}</td>
+                        <td data-label="MESES PAGADOS">{Alumno.mesesP}</td>
                         <td data-label="DESCARGAR INFORME">
-                            <button>
+                            <button onClick={GenerarPDF}>
                                 Descargar PDF
                             </button>
                         </td>
 
                     </tr>
-
                 </tbody>
             </table>
         </div>
