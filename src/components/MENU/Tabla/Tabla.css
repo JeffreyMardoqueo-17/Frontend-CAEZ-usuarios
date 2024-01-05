@@ -1,12 +1,13 @@
 .Table-contenedor {
     padding: 0 10%;
     margin: 40px auto 0;
-    
+
 }
 
 .table {
     width: 100%;
     border-collapse: collapse;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .table thead {
@@ -51,7 +52,7 @@ button {
     border: 2px solid var(--border);
     transition: all 250ms;
     overflow: hidden;
-    margin-left:0;
+    margin-left: 0;
     text-align: center;
     align-content: center;
     align-items: center;
@@ -71,7 +72,7 @@ button::before {
 }
 
 button:hover {
-    color:var(--bg);
+    color: var(--bg);
     border: 1px solid var(--bg);
 }
 
@@ -102,6 +103,7 @@ button:hover::before {
         padding-left: 50%;
         position: relative;
     }
+
     .table td::before {
         content: attr(data-label);
         position: absolute;
@@ -114,6 +116,7 @@ button:hover::before {
         box-sizing: border-box;
         font-weight: bold;
     }
+
     /* Opcional: agregar fondo de color en filas pares */
     .table td:nth-child(even)::before {
         font-weight: bold;
