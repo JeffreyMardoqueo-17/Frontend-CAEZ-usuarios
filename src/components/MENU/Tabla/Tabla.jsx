@@ -1,6 +1,7 @@
 import React from 'react';
 import './Tabla.css'
 import { jsPDF } from "jspdf";
+import 'jspdf-autotable'
 
 const Alumno = {
     nie: "123456789",
@@ -12,15 +13,23 @@ const Alumno = {
 
 const GenerarPDF = ()=>{
     const doc = new jsPDF();
+    //fecha actual 
+    var fechaActual = new Date();
 
-    doc.text(`DATOS DEL ALUMNO`, 95,20);
-    doc.text(`NIE:  ${Alumno.nie}`, 10, 20);
-    doc.text(`Nombre completo: ${Alumno.nombre}`, 10, 40);
-    doc.text(`Grado: ${Alumno.grado}`,10, 30);
-    doc.text(`Meses pagados:${Alumno.mesesP}`, 10, 20);
+    //crear la tabla que se mostrara en la factira o el informe
+    const columnas = [ "NIE", "NOMBRE COMPLETO", "GRADO", "MESES PAGADOS"]
+    const data = [
+        [`${Alumno.nie}`, `${Alumno.nombre}`, `${Alumno.grado}`, `${Alumno.mesesP}`]
+    ]
+    //Genera la tabla
+    doc.autoTable({
+        startY:30,
+        head:[columnas],
+        body: data
+    })
 
     //guardar el PDF con un nombre Especifico
-    doc.save(`Informe_${Alumno.nombre}_NIE${Alumno.nie}`);
+    doc.save(`Informe_${Alumno.nombre}_NIE${Alumno.nie}_${fechaActual.getFullYear()}${('0' + (fechaActual.getMonth() + 1)).slice(-2)}${('0' + fechaActual.getDate()).slice(-2)}.pdf`);
 }
 const Tabla = () => {
     return (
