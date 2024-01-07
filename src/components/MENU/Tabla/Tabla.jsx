@@ -18,7 +18,9 @@ const Tabla = () => {
             [Alumno.nie, Alumno.nombre, Alumno.grado, Alumno.mesesP]
         ];
 
-        generarPDF(titulo, columnas, data);
+        const nombreArchivo = `Informe_${Alumno.nombre.replace(/ /g, '')}_NIE${Alumno.nie}`;
+
+        generarPDF(titulo, columnas, data, nombreArchivo);
     };
 
 
