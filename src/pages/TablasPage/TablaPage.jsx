@@ -1,6 +1,6 @@
 import React from 'react';
 import TablaMes from '../../components/MENU/TablaMes/TablaMes';
-import Tabla from '../../components/MENU/Tabla/Tabla';
+import Tabla from '../../components/TablaAlumno/Tabla';
 
 const TablaPage = () => {
     return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Table.css';
 
-const Table = ({ headers, data }) => {
+const Table = ({ headers, data, showDownloadPDFButton, onDownloadPDFClick }) => {
     return (
         <table className="table">
             <thead>
@@ -22,6 +22,17 @@ const Table = ({ headers, data }) => {
                     </tr>
                 ))}
             </tbody>
+            {showDownloadPDFButton && (
+                <tfoot>
+                    <tr>
+                        <td colSpan={headers.length + 1}>
+                            <button onClick={onDownloadPDFClick}>
+                                Descargar PDF
+                            </button>
+                        </td>
+                    </tr>
+                </tfoot>
+            )}
         </table>
     );
 };
