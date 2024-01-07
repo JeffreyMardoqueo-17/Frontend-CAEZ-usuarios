@@ -36,6 +36,7 @@
     margin: 0;
 }
 
-.name1 {
-    color: var(--rosadito);
+h4{
+    font-size: 25px;
+    color: var(--gris);
 }

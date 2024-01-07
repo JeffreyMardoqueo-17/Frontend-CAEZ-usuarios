@@ -3,7 +3,7 @@ import './CircleImg.css'
 const CircleImg = () => {
     return (
         <div className='circle'>
-            <img src="/logo192.png" alt="" className='img' />
+            <img src="/IMG/FOOTOO.png" alt="" className='img' />
         </div>
     );
 }

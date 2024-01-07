@@ -6,7 +6,6 @@
     --text1: #000;
     --text2: #ffff;
     --border: #f9ce0f;
-    --gris: #dbdbdb7a;
 }
 
 /* Estilos para el círculo */
@@ -38,6 +37,8 @@
     .circle {
         width: 200px;
         height: 200px;
+        /* margin-bottom: 20px  ;
+        top: 70%; */
     }
 
     .img {

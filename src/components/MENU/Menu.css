@@ -8,7 +8,7 @@
 
 nav {
 
-  background: linear-gradient(to top, var(--bg), var(--bgG));
+    background: linear-gradient(to top, var(--bgG), var(--bgG));
     height: 80px;
     width: 100%;
     border-bottom: 10px solid var(--border);
@@ -33,6 +33,7 @@ nav ul {
     margin-right: 20px;
     z-index: 400;
 }
+
 nav.fixed {
     position: fixed;
     top: 0;

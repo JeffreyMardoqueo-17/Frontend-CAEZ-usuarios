@@ -1,40 +1,29 @@
 import React from 'react';
+import './Table.css';
 
-const Table = ({ headers, data, showButton, onButtonClick }) => {
+const Table = ({ headers, data }) => {
     return (
-        <div>
-            <div className='Table-contenedor'>
-                <table className='table'>
-                    <thead>
-                        <tr>
-                            {headers.map((header, index) => (
-                                <th key={index}>{header}</th>
-                            ))}
-                            {showButton && <th>Descargar Informe</th>}
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {data.map((row, rowIndex) => (
-                            <tr key={rowIndex}>
-                                {Object.values(row).map((value, columnIndex) => (
-                                    <td key={columnIndex} data-label={headers[columnIndex]}>
-                                        {value}
-                                    </td>
-                                ))}
-                                {showButton && (
-                                    <td>
-                                        <button onClick={() => onButtonClick(row)}>
-                                            Descargar PDF
-                                        </button>
-                                    </td>
-                                )}
-                            </tr>
+        <table className="table">
+            <thead>
+                <tr>
+                    {headers.map((header, index) => (
+                        <th key={index}>{header}</th>
+                    ))}
+                </tr>
+            </thead>
+            <tbody>
+                {data.map((row, rowIndex) => (
+                    <tr key={rowIndex}>
+                        {Object.values(row).map((value, columnIndex) => (
+                            <td key={columnIndex} data-label={headers[columnIndex]}>
+                                {value}
+                            </td>
                         ))}
-                    </tbody>
-                </table>
-            </div>
-        </div>
+                    </tr>
+                ))}
+            </tbody>
+        </table>
     );
-}
+};
 
 export default Table;
