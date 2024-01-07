@@ -1,8 +1,10 @@
-
-
 .cont {
     min-height: 100vh;
     /* Garantiza al menos el 100% de la altura del viewport */
     overflow-y: auto;
-    /* Asegura que haya desplazamiento vertical si es necesario */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
 }
