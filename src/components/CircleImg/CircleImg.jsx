@@ -4,7 +4,6 @@ const CircleImg = () => {
     return (
         <div className='circle'>
             <img src="/logo192.png" alt="" className='img' />
-            kjsndkjsndkskdjn
         </div>
     );
 }

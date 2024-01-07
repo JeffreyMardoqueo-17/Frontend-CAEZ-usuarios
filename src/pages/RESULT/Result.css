@@ -1,3 +1,8 @@
-.cont{
-    height: 100vh;
+
+
+.cont {
+    min-height: 100vh;
+    /* Garantiza al menos el 100% de la altura del viewport */
+    overflow-y: auto;
+    /* Asegura que haya desplazamiento vertical si es necesario */
 }
