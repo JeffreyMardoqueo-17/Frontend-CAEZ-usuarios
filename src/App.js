@@ -1,14 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import Menu from './components/MENU/Menu';
-import Tabla from './components/MENU/Tabla/Tabla';
-import TablaMes from './components/MENU/TablaMes/TablaMes';
+import TablaPage from './pages/TablasPage/TablaPage';
 function App() {
   return (
     <div className="App">
       <Menu />
-      <Tabla />
-      <TablaMes />
+      <TablaPage />
     </div>
   );
 }
