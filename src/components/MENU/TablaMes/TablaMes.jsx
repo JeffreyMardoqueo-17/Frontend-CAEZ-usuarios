@@ -33,6 +33,7 @@ const TablaMes = () => {
                         <th>MULTA</th>
                         <th>MENSUALIDAD</th>
                         <th>TOTAL</th>
+                        <th>DESCARGAR INFORME DE PAGO DEL MES</th>
                     </tr>
                 </thead>
                 <tbody>
