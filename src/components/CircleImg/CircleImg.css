@@ -8,7 +8,7 @@
     --border: #f9ce0f;
 }
 
-/* Estilos para el círculo */
+/* Estilos para el círculo
 .circle {
     display: flex;
     flex-direction: column;
@@ -32,17 +32,56 @@
     border-radius: 50%;
 }
 
-/* Media query para pantallas más pequeñas */
+/* Media query para pantallas más pequeñas dsd
 @media screen and (max-width: 400px) {
     .circle {
         width: 200px;
         height: 200px;
         /* margin-bottom: 20px  ;
-        top: 70%; */
+        top: 70%; 
     }
 
     .img {
         width: 200px;
         height: 200px;
+    }
+} */
+.circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    /* En lugar de position absolute, centra el círculo horizontalmente */
+    width: 80%;
+    /* Usa porcentajes para el tamaño */
+    max-width: 300px;
+    /* Limita el tamaño máximo */
+    height: auto;
+    /* Permite que la altura se ajuste automáticamente */
+    background-color: var(--bgG);
+    border-radius: 50%;
+    box-shadow: var(--border) 0px 0px 0px 10px, var(--bgG) 0px 0px 0px 15px;
+    margin: 20px auto;
+    /* Centra el círculo horizontalmente */
+    max-width: 300px;
+    /* Limita el tamaño máximo */
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) {
+    .circle {
+        max-width: 600px;
+        /* Ajusta según sea necesario para tamaños de pantalla más grandes */
+    }
+
+    .img {
+        width: 100%;
+        height: auto;
     }
 }

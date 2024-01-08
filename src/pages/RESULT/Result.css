@@ -1,10 +1,40 @@
-.cont {
+/* .cont {
     min-height: 100vh;
-    /* Garantiza al menos el 100% de la altura del viewport */
+    /* Garantiza al menos el 100% de la altura del viewport 
     overflow-y: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     padding-bottom: 20px;
+} */
+
+/* Result.css */
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .cont {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .cont>div {
+        max-width: 400px;
+        /* O ajusta según sea necesario */
+    }
+}   
+h2{
+    color: var(--bgG);
+    font-size: 25px;
+    font-weight: 400;
 }

@@ -1,23 +1,25 @@
-/* Nombre.css */
-
 .Perfil {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    position:absolute;
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    margin-bottom: 20px;
+    margin: 20px auto;
+    /* Centra vertical y horizontalmente */
+    width: 80%;
+    /* Usa porcentajes para el tamaño */
+    max-width: 90%;
+    /* Limita el tamaño máximo */
     overflow: auto;
-    /* Ajusta según tus necesidades */
+    height: 100%;
+
+    user-select: none;
 }
 
-@media screen and (max-width : 400px) {
+/* Media query para tamaños de pantalla más grandes */
+@media screen and (min-width: 768px) {
     .Perfil {
-        margin-top: 0%;
-        /* Ajusta según tus necesidades */
+        max-width: 600px;
+        /* Ajusta según sea necesario para tamaños de pantalla más grandes */
     }
 }
 
@@ -36,7 +38,7 @@
     margin: 0;
 }
 
-h4{
+h4 {
     font-size: 25px;
-    color: var(--gris);
+    color: var(--bg2);
 }

@@ -1,13 +1,22 @@
+:root {
+    --primary: #fff;
+    --bg: #020240;
+    --bgG: #080820;
+    --bg2: #4D51B3;
+    --text1: #000;
+    --text2: #ffff;
+    --border: #f9ce0f;
+    --gris: #4e4c4c;
+}
 
 .container {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 20px;
+    position: relative;
+    /* Usa position relative para el contenedor */
     text-align: center;
-    width: 100%;
-    user-select: none;
+    margin: 20px auto;
+    /* Centra el contenedor horizontalmente */
+    width: 80%;
+    /* Usa porcentajes para el tamaño */
 }
 
 /* Estilo para el botón */
@@ -20,7 +29,14 @@
     cursor: pointer;
     bottom: 0;
     user-select: none;
+    width: 100%;
+    font-weight: 600;
+    border: 1px solid var(--border);
+    user-select: none;
 }
-.btn:hover{
-    background: red;
+
+.btn:hover {
+    background: var(--bg2);
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
