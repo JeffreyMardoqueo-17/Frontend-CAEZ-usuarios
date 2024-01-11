@@ -2,9 +2,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './BuscadorPage.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faLock } from '@fortawesome/free-solid-svg-icons';
-
+import { FaUser } from "react-icons/fa";
 
 const BuscadorPage = () => {
     const [nie, setNie] = useState('');
@@ -34,45 +32,34 @@ const BuscadorPage = () => {
     };
 
     return (
-        // <div className='caja'>
-        //     <h1>Buscador de Alumnos</h1>
-        //     <div className='cajaB'>
-        //         <label htmlFor="nie">NIE:</label>
-        //         <input
-        //             type="text"
-        //             id="nie"
-        //             value={nie}
-        //             onChange={handleNieChange}
-        //             placeholder="Ingrese el NIE"
-        //         />
-        //         <button onClick={buscarAlumno}>Buscar</button>
-        //     </div>
-
-        // </div>
         <div className="conti">
             <div className="side">
                 {/* <img src="/assets/BuscarAlumno.svg" alt="" className="side-img" /> */}
             </div>
-
             <div className="main">
                 <div className="login-container">
-                    <p className="title">Welcome back</p>
+                    <p className="title">Bienvenidos</p>
+
                     <div className="separator"></div>
                     <p className="welcome-message">
-                        Please, provide login credential to proceed and have access to all our services
+                        Porfavor, ingrese el numero de NIE del estudiante, para poder realizar la busqueda de sus Pagos
                     </p>
 
                     <form className="login-form">
                         <div className="form-control">
-                            <input type="text" placeholder="Username" />
-                            <i className="fas fa-user"></i>
+                            <div className="form-control">
+                                <FaUser className="user-icon" />
+                                <input
+                                    type="number"
+                                    id='nie'
+                                    value={nie}
+                                    onChange={handleNieChange}
+                                    placeholder="Nie del estudiante"
+                                    required
+                                />
+                            </div>
                         </div>
-                        <div className="form-control">
-                            <input type="password" placeholder="Password" />
-                            <i className="fas fa-lock"></i>
-                        </div>
-
-                        <button className="submit">Login</button>
+                        <button className="submit" onClick={buscarAlumno}>Buscar</button>
                     </form>
                 </div>
             </div>

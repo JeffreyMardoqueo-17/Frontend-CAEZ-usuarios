@@ -17,6 +17,17 @@
     --gris: #4e4c4c;
 }
 
+/* quitar el cosito de decremneto o incremento dle input number */
+.form-control input[type="number"]::-webkit-inner-spin-button,
+.form-control input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form-control input[type="number"] {
+    -moz-appearance: textfield;
+}
+
 
 .conti {
     min-height: 100vh;
@@ -27,12 +38,13 @@
 .side {
     background: url('/public/assets/mancha.svg') no-repeat;
     background-size: contain;
-    /* Ajusta el tamaño para que el SVG esté completamente contenido en el contenedor */
     background-position: center;
-    /* Alinea el fondo en el centro del contenedor */
     width: 50%;
     display: flex;
     align-items: center;
+    /* border-right: 3px solid var(--bg2);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px; */
 }
 
 .side-img {
@@ -48,37 +60,46 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px; */
+    margin-left: 10px;
 }
 
 .login-container {
-    max-width: 450px;
-    padding: 24px;
+    /* max-width: 450px; */
+    /* padding: 10px; */
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    justify-content: center;
+    /* background-color: red; */
 }
 
 .title {
     text-transform: uppercase;
-    font-size: 3em;
+    font-size: 60px;
     font-weight: bold;
     text-align: center;
     letter-spacing: 1px;
+    color: var(--bgG);
+    margin-left: 15px;
 }
 
 .separator {
-    width: 150px;
+    width: 90%;
     height: 4px;
-    background-color: #843bc7;
+    background-color: var(--bg2);
     margin: 24px;
 }
 
 .welcome-message {
     text-align: center;
-    font-size: 1.1em;
+    font-size: 17px;
     line-height: 28px;
     margin-bottom: 30px;
-    color: #696969;
+    color: var(--gris);
 }
 
 .login-form {
@@ -93,6 +114,34 @@
     margin-bottom: 24px;
 }
 
+.form-control {
+    width: 100%;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.user-icon {
+    position: absolute;
+    left: 10px;
+    /* Ajusta la posición del icono según sea necesario */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+input {
+    width: calc(100% - 20px);
+    /* Considera el espacio ocupado por el icono */
+    background: #e6e6e6;
+    color: #333;
+    letter-spacing: 0.5px;
+    padding: 14px 64px 14px 30px;
+    /* Ajusta el padding para dejar espacio para el icono */
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+
 input,
 button {
     border: none;
@@ -102,11 +151,16 @@ button {
 }
 
 input {
-    width: 100%;
-    background: #e6e6e6;
+    width: 300px;
+    background: #e6e6e6aa;
     color: #333;
     letter-spacing: 0.5px;
-    padding: 14px 64px;
+    padding: 20px 50px;
+    margin: 10px;
+}
+
+input:hover {
+    border: 1px solid var(--bg2);
 }
 
 input~i {
@@ -123,24 +177,25 @@ input:focus~i {
 }
 
 button.submit {
-    color: #fff;
+    color: var(--primary);
     padding: 14px 64px;
     margin: 32px auto;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: bold;
-    background-image: linear-gradient(to right, #8b33c5, #15a0e1);
+    background-image: linear-gradient(to right, var(--bgG), var(--bg));
     cursor: pointer;
-    transition: opacity 0.4s;
 }
 
-button.submit:hover {
-    opacity: 0.9;
+button.submit {
+    border: 1px solid var(--border);
 }
 
-/* Resto de tu CSS... */
+button.sumbit:hover {
+    background-color: var(--bg2);
 
-/* ----  Responsiveness   ----  */
+}
+
 @media (max-width: 780px) {
     body {
         display: flex;
@@ -148,11 +203,15 @@ button.submit:hover {
         align-items: center;
     }
 
+    .title {
+        font-size: 50px;
+        margin-left: 12px;
+    }
+
     .conti {
         flex-direction: column;
         text-align: center;
         align-items: center;
-        margin-top: 100px;
     }
 
     .side {
@@ -161,12 +220,23 @@ button.submit:hover {
 
     .main {
         width: 100%;
-        /* Ajusta el ancho al 100% en dispositivos móviles */
+        margin-top: 200px;
+        border: none;
     }
 
     .login-container {
         max-width: 100%;
-        /* Ajusta el ancho máximo al 100% en dispositivos móviles */
+    }
+
+    .login-container {
+        /* max-width: 450px; */
+        /* padding: 10px; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
     }
 
     .side-img {
