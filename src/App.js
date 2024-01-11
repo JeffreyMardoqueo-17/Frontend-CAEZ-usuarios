@@ -1,21 +1,20 @@
-import logo from './logo.svg';
+// App.js
 import './App.css';
-import Menu from './components/MENU/Menu';
-import TablaPage from './pages/TablasPage/TablaPage';
-import Result from './pages/RESULT/Result';
-import Tabla from './components/TablaAlumno/Tabla';
-import Input from './components/Input/Input';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import BuscadorPage from './pages/BuscadorPage/BuscadorPage';
+import ResultPage from './pages/RESULT/Result';  // Importa ResultPage
+
 function App() {
   return (
-    <div className="App">
-      {/* <Menu /> */}
-      {/* <TablaPage /> */}
-      {/* <Result /> */}
-      {/* <Tabla /> */}
-      {/* <Input /> */}
-      <BuscadorPage />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<BuscadorPage />} />
+          <Route path="/result" element={<ResultPage />} />  {/* Cambia el componente Result por ResultPage */}
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

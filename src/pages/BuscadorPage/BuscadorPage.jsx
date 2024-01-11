@@ -1,58 +1,81 @@
+// BuscadorPage.js
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import './BuscadorPage.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser, faLock } from '@fortawesome/free-solid-svg-icons';
+
 
 const BuscadorPage = () => {
-    // Estado para almacenar el valor del NIE ingresado
     const [nie, setNie] = useState('');
+    const navigate = useNavigate();
 
-    // Función para manejar cambios en el input del NIE
     const handleNieChange = (event) => {
         setNie(event.target.value);
     };
 
-    // Lista de alumnos de ejemplo
     const alumnos = [
-        { nie: "111111111", nombre: "Ana García", grado: "Secundaria", mesesP: "5" },
-        { nie: "222222222", nombre: "Carlos López", grado: "Bachillerato", mesesP: "8" },
-        { nie: "333333333", nombre: "Elena Martínez", grado: "Primaria", mesesP: "6" },
-        { nie: "123456789", nombre: "Jeffrey Mardoqueo Jimenez Santos", grado: "Noveno Grado", mesesP: "7" }
+        { nie: "1", nombre: "Ana García", grado: "Secundaria", mesesP: "5" },
+        { nie: "2", nombre: "Carlos López", grado: "Bachillerato", mesesP: "8" },
+        { nie: "4", nombre: "Elena Martínez", grado: "Primaria", mesesP: "6" },
+        { nie: "5", nombre: "Jeffrey Mardoqueo Jimenez Santos", grado: "Noveno Grado", mesesP: "7" }
     ];
 
-    // Función para buscar un alumno por su NIE
     const buscarAlumno = () => {
-        // Busca al alumno en la lista utilizando el NIE ingresado
         const alumnoEncontrado = alumnos.find((alumno) => alumno.nie === nie);
 
-        // Si se encuentra el alumno, muestra una alerta con su información
         if (alumnoEncontrado) {
-            alert(`Alumno encontrado: ${alumnoEncontrado.nombre}, Grado: ${alumnoEncontrado.grado}, Meses de Pago: ${alumnoEncontrado.mesesP}`);
+            // Redirige a la página de resultados con el alumno encontrado como prop
+            navigate('/result', { state: { alumno: alumnoEncontrado } });
         } else {
-            // Si no se encuentra el alumno, muestra una alerta indicando que no se encontró
-            alert('No se encontró ningún alumno con ese NIE');
+            // Si no se encuentra, puedes manejarlo de acuerdo a tus necesidades (puedes mostrar un mensaje de error, etc.)
+            console.log("Alumno no encontrado");
         }
     };
 
-    // Estructura del componente
     return (
-        <div>
-            <h1>Buscador de Alumnos</h1>
-            <div>
-                {/* Etiqueta y input para ingresar el NIE */}
-                <label htmlFor="nie">NIE:</label>
-                <input
-                    type="text"
-                    id="nie"
-                    value={nie}
-                    onChange={handleNieChange}
-                    placeholder="Ingrese el NIE"
-                />
+        // <div className='caja'>
+        //     <h1>Buscador de Alumnos</h1>
+        //     <div className='cajaB'>
+        //         <label htmlFor="nie">NIE:</label>
+        //         <input
+        //             type="text"
+        //             id="nie"
+        //             value={nie}
+        //             onChange={handleNieChange}
+        //             placeholder="Ingrese el NIE"
+        //         />
+        //         <button onClick={buscarAlumno}>Buscar</button>
+        //     </div>
+
+        // </div>
+        <div className='conti'>
+            <div class="side">
+                <img src="/assets/BuscarAlumno.svg" alt="" />
             </div>
-            <div>
-                {/* Botón para iniciar la búsqueda */}
-                <button onClick={buscarAlumno}>Buscar</button>
+
+            <div class="main">
+                <div class="login-container">
+                    <p class="title">Welcome back</p>
+                    <div class="separator"></div>
+                    <p class="welcome-message">Please, provide login credential to proceed and have access to all our services</p>
+
+                    <form class="login-form">
+                        <div class="form-control">
+                            <input type="text" placeholder="Username" />
+                            <i className="fas fa-user"></i>
+                        </div>
+                        <div class="form-control">
+                            <input type="password" placeholder="Password" />
+                            <i className="fas fa-lock"></i>    
+                        </div>
+
+                        <button class="submit">Login</button>
+                    </form>
+                </div>
             </div>
         </div>
     );
 };
 
 export default BuscadorPage;
-
