@@ -49,32 +49,35 @@ const BuscadorPage = () => {
         //     </div>
 
         // </div>
-        <div className='conti'>
-            <div class="side">
-                <img src="/assets/BuscarAlumno.svg" alt="" />
+        <div className="conti">
+            <div className="side">
+                {/* <img src="/assets/BuscarAlumno.svg" alt="" className="side-img" /> */}
             </div>
 
-            <div class="main">
-                <div class="login-container">
-                    <p class="title">Welcome back</p>
-                    <div class="separator"></div>
-                    <p class="welcome-message">Please, provide login credential to proceed and have access to all our services</p>
+            <div className="main">
+                <div className="login-container">
+                    <p className="title">Welcome back</p>
+                    <div className="separator"></div>
+                    <p className="welcome-message">
+                        Please, provide login credential to proceed and have access to all our services
+                    </p>
 
-                    <form class="login-form">
-                        <div class="form-control">
+                    <form className="login-form">
+                        <div className="form-control">
                             <input type="text" placeholder="Username" />
                             <i className="fas fa-user"></i>
                         </div>
-                        <div class="form-control">
+                        <div className="form-control">
                             <input type="password" placeholder="Password" />
-                            <i className="fas fa-lock"></i>    
+                            <i className="fas fa-lock"></i>
                         </div>
 
-                        <button class="submit">Login</button>
+                        <button className="submit">Login</button>
                     </form>
                 </div>
             </div>
         </div>
+
     );
 };
 

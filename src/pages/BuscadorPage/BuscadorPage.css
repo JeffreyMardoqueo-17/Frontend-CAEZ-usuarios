@@ -6,29 +6,48 @@
     color: #303433;
 }
 
+:root {
+    --primary: #fff;
+    --bg: #020240;
+    --bgG: #080820;
+    --bg2: #4D51B3;
+    --text1: #000;
+    --text2: #ffff;
+    --border: #f9ce0f;
+    --gris: #4e4c4c;
+}
+
+
 .conti {
     min-height: 100vh;
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.conti {
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .side {
-    background: url('/public/assets/COSITODEAUNLADO.svg') no-repeat;
-    background-size: 100% 102%;
+    background: url('/public/assets/mancha.svg') no-repeat;
+    background-size: contain;
+    /* Ajusta el tamaño para que el SVG esté completamente contenido en el contenedor */
+    background-position: center;
+    /* Alinea el fondo en el centro del contenedor */
     width: 50%;
-    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
-.side img {
+.side-img {
+    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-left: 110px;
+    /* Alinea la imagen al centro horizontalmente */
+}
+
+.main {
     width: 50%;
-    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .login-container {
@@ -90,16 +109,16 @@ input {
     padding: 14px 64px;
 }
 
-input ~ i {
+input~i {
     position: absolute;
     left: 32px;
     top: 50%;
     transform: translateY(-50%);
     color: #888;
-    transition: color   0.4s;
+    transition: color 0.4s;
 }
 
-input:focus ~ i {
+input:focus~i {
     color: #843bc7;
 }
 
@@ -119,16 +138,39 @@ button.submit:hover {
     opacity: 0.9;
 }
 
+/* Resto de tu CSS... */
+
 /* ----  Responsiveness   ----  */
 @media (max-width: 780px) {
-
     body {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
+    .conti {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+
     .side {
         display: none;
+    }
+
+    .main {
+        width: 100%;
+        /* Ajusta el ancho al 100% en dispositivos móviles */
+    }
+
+    .login-container {
+        max-width: 100%;
+        /* Ajusta el ancho máximo al 100% en dispositivos móviles */
+    }
+
+    .side-img {
+        margin-left: 0;
+        /* Elimina el margen izquierdo en dispositivos móviles */
     }
 }
