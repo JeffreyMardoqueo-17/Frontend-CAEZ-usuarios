@@ -84,8 +84,7 @@ li a:hover {
 .icono {
     float: right;
     height: 80px;
-
-
+    fill: #fff;
 }
 
 ul.show-menu {

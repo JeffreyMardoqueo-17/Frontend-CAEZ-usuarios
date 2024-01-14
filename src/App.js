@@ -4,6 +4,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import BuscadorPage from './pages/BuscadorPage/BuscadorPage';
 import ResultPage from './pages/RESULT/Result';  // Importa ResultPage
+import TablaPage from './pages/TablasPage/TablaPage';
+import { useNavigate } from 'react-router-dom';
 
 function App() {
   return (
@@ -11,7 +13,8 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<BuscadorPage />} />
-          <Route path="/result" element={<ResultPage />} />  {/* Cambia el componente Result por ResultPage */}
+          <Route path="/result" element={<ResultPage />} /> 
+          <Route path="/result/Tablas" element={<TablaPage />}/>
         </Routes>
       </div>
     </Router>

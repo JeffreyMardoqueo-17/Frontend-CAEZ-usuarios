@@ -114,34 +114,6 @@
     margin-bottom: 24px;
 }
 
-.form-control {
-    width: 100%;
-    position: relative;
-    margin-bottom: 24px;
-}
-
-.user-icon {
-    position: absolute;
-    left: 10px;
-    /* Ajusta la posición del icono según sea necesario */
-    top: 50%;
-    transform: translateY(-50%);
-    color: #888;
-}
-
-input {
-    width: calc(100% - 20px);
-    /* Considera el espacio ocupado por el icono */
-    background: #e6e6e6;
-    color: #333;
-    letter-spacing: 0.5px;
-    padding: 14px 64px 14px 30px;
-    /* Ajusta el padding para dejar espacio para el icono */
-    border-radius: 30px;
-    border: none;
-    outline: none;
-}
-
 input,
 button {
     border: none;
@@ -168,7 +140,7 @@ input~i {
     left: 32px;
     top: 50%;
     transform: translateY(-50%);
-    color: #888;
+    color: var(--text2);
     transition: color 0.4s;
 }
 
@@ -197,7 +169,7 @@ button.sumbit:hover {
 }
 
 @media (max-width: 780px) {
-    body {
+    .conti {
         display: flex;
         justify-content: center;
         align-items: center;

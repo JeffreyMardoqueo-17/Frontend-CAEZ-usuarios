@@ -21,7 +21,7 @@ const Result = () => {
                 <h2>Datos del Alumno</h2>
                 <Table headers={encabezadosAlumno} data={datosAlumno} showDownloadPDFButton={false}  />
             </div>
-            <BotonNext />
+            <BotonNext link="/result/Tablas" text="CONTINUAR"/>
         </div>
     );
 }

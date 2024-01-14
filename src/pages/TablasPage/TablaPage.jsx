@@ -1,10 +1,10 @@
 import React from 'react';
 import Tabla from '../../components/TablaAlumno/Tabla';
-
+import Menu from '../../components/MENU/Menu'
 const TablaPage = () => {
     return (
         <div>
-            <h1></h1>
+            <Menu />
             <Tabla />
         </div>
     );

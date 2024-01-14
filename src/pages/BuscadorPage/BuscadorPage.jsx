@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './BuscadorPage.css'
-import { FaUser } from "react-icons/fa";
+
 
 const BuscadorPage = () => {
     const [nie, setNie] = useState('');
@@ -38,26 +38,17 @@ const BuscadorPage = () => {
             </div>
             <div className="main">
                 <div className="login-container">
-                    <p className="title">Bienvenidos</p>
+                    <p className="title">Bienvenidos </p>
 
                     <div className="separator"></div>
                     <p className="welcome-message">
-                        Porfavor, ingrese el numero de NIE del estudiante, para poder realizar la busqueda de sus Pagos
+                        Por favor, ingrese el número de NIE del estudiante, para poder realizar la consulta de sus Pagos
                     </p>
 
                     <form className="login-form">
                         <div className="form-control">
-                            <div className="form-control">
-                                <FaUser className="user-icon" />
-                                <input
-                                    type="number"
-                                    id='nie'
-                                    value={nie}
-                                    onChange={handleNieChange}
-                                    placeholder="Nie del estudiante"
-                                    required
-                                />
-                            </div>
+                            <input type="number" id='nie' value={nie} onChange={handleNieChange} placeholder="Nie del estudiante" required />
+                            <i className="fas fa-user"></i>
                         </div>
                         <button className="submit" onClick={buscarAlumno}>Buscar</button>
                     </form>
