@@ -13,10 +13,10 @@ const BuscadorPage = () => {
     };
 
     const alumnos = [
-        { nie: "1", nombre: "Ana García", grado: "Secundaria", mesesP: "5" },
-        { nie: "2", nombre: "Carlos López", grado: "Bachillerato", mesesP: "8" },
-        { nie: "4", nombre: "Elena Martínez", grado: "Primaria", mesesP: "6" },
-        { nie: "5", nombre: "Jeffrey Mardoqueo Jimenez Santos", grado: "Noveno Grado", mesesP: "7" }
+        { nie: "1", nombre: "Ana García", grado: "Secundaria", turno: "Mañna" },
+        { nie: "2", nombre: "Carlos López", grado: "Bachillerato", turno: "Tarde" },
+        { nie: "4", nombre: "Elena Martínez", grado: "Primaria", turno: "Mañana" },
+        { nie: "5", nombre: "Jeffrey Mardoqueo Jimenez Santos", grado: "Noveno Grado", turno: "mañana" }
     ];
 
     const buscarAlumno = () => {
@@ -28,7 +28,7 @@ const BuscadorPage = () => {
         } else {
             // Si no se encuentra, puedes manejarlo de acuerdo a tus necesidades (puedes mostrar un mensaje de error, etc.)
             console.log("Alumno no encontrado");
-        }
+        } 
     };
 
     return (
