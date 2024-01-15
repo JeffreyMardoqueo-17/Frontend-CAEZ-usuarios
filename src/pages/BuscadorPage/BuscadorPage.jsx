@@ -1,14 +1,10 @@
-// BuscadorPage.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './BuscadorPage.css'
-import BotonNext from '../../components/BotonNext/BotonNext';
-
 
 const BuscadorPage = () => {
     const [nie, setNie] = useState('');
     const navigate = useNavigate();
-
     const handleNieChange = (event) => {
         setNie(event.target.value);
     };
@@ -19,10 +15,8 @@ const BuscadorPage = () => {
         { nie: "4", nombre: "Elena Martínez", grado: "Primaria", turno: "Mañana" },
         { nie: "5", nombre: "Jeffrey Mardoqueo Jimenez Santos", grado: "Noveno Grado", turno: "mañana" }
     ];
-
     const buscarAlumno = () => {
         const alumnoEncontrado = alumnos.find((alumno) => alumno.nie === nie);
-
         if (alumnoEncontrado) {
             // Redirige a la página de resultados con el alumno encontrado como prop
             navigate('/result', { state: { alumno: alumnoEncontrado } });
@@ -31,6 +25,7 @@ const BuscadorPage = () => {
             console.log("Alumno no encontrado");
         }
     };
+    //para que aparezca el logo o no
     return (
         <div className="conti">
             <div className="side">
@@ -44,14 +39,12 @@ const BuscadorPage = () => {
                     <p className="welcome-message">
                         Por favor, ingrese el número de NIE del estudiante, para poder realizar la consulta de sus Pagos
                     </p>
-
                     <form className="login-form">
                         <div className="form-control">
                             <input type="number" id='nie' value={nie} onChange={handleNieChange} placeholder="Nie del estudiante" required />
                             <i className="fas fa-user"></i>
                         </div>
                         <button className="submit" onClick={buscarAlumno}>Buscar</button>
-                       
                     </form>
                 </div>
             </div>
