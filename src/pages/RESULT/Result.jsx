@@ -6,14 +6,15 @@ import CircleImg from '../../components/CircleImg/CircleImg';
 import Table from '../../components/Table/Table';
 
 const Result = () => {
-    const navigate = useNavigate();
 
     const handleClick = () => {
         navigate('/result/Tablas');
     };
-    // Utiliza useLocation para obtener el estado enviado desde BuscadorPage
+
+    const navigate = useNavigate();
     const location = useLocation();
     const { state } = location;
+    console.log(state); // Agrega esta línea para verificar el estado en la consola
 
     // Verifica si hay datos en el estado
     if (!state || !state.alumno) {

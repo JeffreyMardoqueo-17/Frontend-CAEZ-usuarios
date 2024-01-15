@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './BuscadorPage.css'
+import BotonNext from '../../components/BotonNext/BotonNext';
 
 
 const BuscadorPage = () => {
@@ -11,7 +12,7 @@ const BuscadorPage = () => {
     const handleNieChange = (event) => {
         setNie(event.target.value);
     };
-
+    //datos de busqueda tempral
     const alumnos = [
         { nie: "1", nombre: "Ana García", grado: "Secundaria", turno: "Mañna" },
         { nie: "2", nombre: "Carlos López", grado: "Bachillerato", turno: "Tarde" },
@@ -26,11 +27,10 @@ const BuscadorPage = () => {
             // Redirige a la página de resultados con el alumno encontrado como prop
             navigate('/result', { state: { alumno: alumnoEncontrado } });
         } else {
-            // Si no se encuentra, puedes manejarlo de acuerdo a tus necesidades (puedes mostrar un mensaje de error, etc.)
+            // Si no se encuentra pues que se chingue
             console.log("Alumno no encontrado");
-        } 
+        }
     };
-
     return (
         <div className="conti">
             <div className="side">
@@ -51,6 +51,7 @@ const BuscadorPage = () => {
                             <i className="fas fa-user"></i>
                         </div>
                         <button className="submit" onClick={buscarAlumno}>Buscar</button>
+                       
                     </form>
                 </div>
             </div>

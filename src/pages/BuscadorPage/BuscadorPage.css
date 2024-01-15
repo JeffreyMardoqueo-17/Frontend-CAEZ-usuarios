@@ -125,7 +125,7 @@ button {
 input {
     width: 300px;
     background: #e6e6e6aa;
-    color: #333;
+    color: var(--bg2);
     letter-spacing: 0.5px;
     padding: 20px 50px;
     margin: 10px;
