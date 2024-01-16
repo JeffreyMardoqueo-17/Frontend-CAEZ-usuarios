@@ -62,7 +62,7 @@ const Menu = () => {
                 </label>
 
                 <a href="#" className="enlace" onClick={handleLinkClick}>
-                    <img src="/logo192.png" alt="Logo del cole" className="logo" />
+                    <img src="/logonsinbac.svg" alt="Logo del cole" className="logo" />
                 </a>
                 <ul className={menuOpen ? 'show-menu' : ''}>
                     {links.map((link, index) => (

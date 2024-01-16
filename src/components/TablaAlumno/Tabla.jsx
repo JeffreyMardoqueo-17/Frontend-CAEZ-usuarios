@@ -3,7 +3,7 @@ import generarPDF from '../../Fuctions/GenerarPDF';
 import Table from '../Table/Table';
 
 const Alumno = {
-    nie: "123456789",
+    nie:"5",
     nombre: "Jeffrey Mardoqueo Jimenez Santos",
     grado: "noveno grado",
     mesesP: "7",

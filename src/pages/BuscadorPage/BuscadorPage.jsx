@@ -29,10 +29,12 @@ const BuscadorPage = () => {
     return (
         <div className="conti">
             <div className="side">
-                {/* <img src="/assets/BuscarAlumno.svg" alt="" className="side-img" /> */}
             </div>
             <div className="main">
                 <div className="login-container">
+                    <div className="ImagenCel">
+                        <img src="/assets/lOGOoRIGINAL.svg" alt="" className="imgCel" />
+                    </div>
                     <p className="title">Bienvenidos </p>
 
                     <div className="separator"></div>
@@ -44,13 +46,11 @@ const BuscadorPage = () => {
                             <input type="number" id='nie' value={nie} onChange={handleNieChange} placeholder="Nie del estudiante" required />
                             <i className="fas fa-user"></i>
                         </div>
-                        <button className="submit" onClick={buscarAlumno}>Buscar</button>
+                        <button className="btn buscar" onClick={buscarAlumno}>Buscar</button>
                     </form>
                 </div>
             </div>
         </div>
-
     );
 };
-
 export default BuscadorPage;

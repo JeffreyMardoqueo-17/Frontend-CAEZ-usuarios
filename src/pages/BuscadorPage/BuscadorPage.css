@@ -128,7 +128,7 @@ input {
     color: var(--bg2);
     letter-spacing: 0.5px;
     padding: 20px 50px;
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 input:hover {
@@ -144,28 +144,8 @@ input~i {
     transition: color 0.4s;
 }
 
-input:focus~i {
-    color: #843bc7;
-}
-
-button.submit {
-    color: var(--primary);
-    padding: 14px 64px;
-    margin: 32px auto;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: bold;
-    background-image: linear-gradient(to right, var(--bgG), var(--bg));
-    cursor: pointer;
-}
-
-button.submit {
-    border: 1px solid var(--border);
-}
-
-button.sumbit:hover {
-    background-color: var(--bg2);
-
+.imgCel{
+    display: none;
 }
 
 @media (max-width: 780px) {
@@ -174,10 +154,15 @@ button.sumbit:hover {
         justify-content: center;
         align-items: center;
     }
+     .imgCel {
+        display: block;
+        width: 80%; /* Ajusta el ancho según tus necesidades */
+        margin: 0 auto; /* Ajusta el margen según tus necesidades */
+    }
 
     .title {
-        font-size: 50px;
-        margin-left: 12px;
+        font-size: 45px;
+        margin-top: 0;
     }
 
     .conti {
@@ -192,8 +177,11 @@ button.sumbit:hover {
 
     .main {
         width: 100%;
-        margin-top: 200px;
+        margin-top: 0;
         border: none;
+        align-items: center;
+        align-content: center;
+        align-self: center;
     }
 
     .login-container {
@@ -203,14 +191,19 @@ button.sumbit:hover {
     .login-container {
         /* max-width: 450px; */
         /* padding: 10px; */
-        width: 100%;
+        width: 80%;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         justify-content: center;
     }
-
+    .btn{
+        width: 100%;
+    }
+    .buscar{
+        margin-right: 0;
+    }
     .side-img {
         margin-left: 0;
         /* Elimina el margen izquierdo en dispositivos móviles */

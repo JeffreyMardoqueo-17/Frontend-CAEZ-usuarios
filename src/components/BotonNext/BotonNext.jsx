@@ -12,7 +12,7 @@ const BotonNext = ({ link, text }) => {
     };
 
     return (
-        <div className="container">
+        <div>
             <button onClick={handleClick} className="btn">
                 {text}
             </button>
