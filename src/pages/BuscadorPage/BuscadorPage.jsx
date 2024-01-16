@@ -22,6 +22,7 @@ const BuscadorPage = () => {
             navigate('/result', { state: { alumno: alumnoEncontrado } });
         } else {
             // Si no se encuentra pues que se chingue
+            navigate('/NoEncontrado');
             console.log("Alumno no encontrado");
         }
     };

@@ -5,7 +5,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import BuscadorPage from './pages/BuscadorPage/BuscadorPage';
 import ResultPage from './pages/RESULT/Result';  // Importa ResultPage
 import TablaPage from './pages/TablasPage/TablaPage';
+
 import { useNavigate } from 'react-router-dom';
+import ErrorPages from './pages/Error/ErrorPages';
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
           <Route path="/" element={<BuscadorPage />} />
           <Route path="/result" element={<ResultPage />} /> 
           <Route path="/result/Tablas" element={<TablaPage />}/>
+          <Route path='/NoEncontrado' element={<ErrorPages />}/>
         </Routes>
       </div>
     </Router>

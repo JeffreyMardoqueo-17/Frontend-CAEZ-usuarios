@@ -1,11 +1,14 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    background-color: var(--bgG);
-    color: #fff;
+    background-color: var(--primary);
     font-family: sans-serif;
+    align-content: center;
+    align-items: center;
 }
 
 .error {
@@ -13,13 +16,22 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+    gap: 20px;
 }
 
-.H1 {
-    font-size: 6em;
-    margin: 0;
+.imagenerror {
+    height: 20%;
+    width: 20%;
+    transition: transform 1s ease-in-out;
+    /* Transición de 1 segundo con aceleración y desaceleración */
+}
+
+.imagenerror:hover {
     animation: pulse 2s ease-in-out infinite;
+    /* Gira 360 grados en el hover */
 }
 
 @keyframes pulse {
@@ -36,22 +48,37 @@ body {
     }
 }
 
-.P {
-    font-size: 1.5em;
+.H1 {
+    font-size: 50px;
+    color: var(--bgG);
     margin: 0;
-    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
 }
 
-.A {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #4293ef;
-    color: #fff;
+
+.P {
+    font-size: 20px;
+    margin: 0;
+    margin-top: 20px;
+    color: var(--bgG);
+}
+
+.seguir {
+    color: var(--text2);
     text-decoration: none;
     margin-top: 20px;
+    align-items: center;
+    text-align: center;
     font-size: 1.2em;
     border-radius: 50px;
+    width: 50%;
     animation: bounce 1s ease-in-out infinite;
+}
+
+.seguir:hover {
+    animation: none;
 }
 
 @keyframes bounce {
@@ -65,34 +92,42 @@ body {
     }
 
     40% {
-        transform: translateY(-10px);
+        transform: translateY(-5px);
     }
 
     60% {
-        transform: translateY(-5px);
+        transform: translateY(-4px);
     }
 }
 
 @media (max-width: 768px) {
     .H1 {
-        font-size: 4em;
+        font-size: 30px;
     }
 
     .P {
-        font-size: 1em;
+        font-size: 17px;
+        text-align: center;
     }
 }
 
 @media (max-width: 576px) {
     .H1 {
-        font-size: 3em;
+        font-size: 30px;
+    }
+
+    .imagenerror {
+        width: 80%;
+        height: 60%;
     }
 
     .P {
-        font-size: 0.8em;
+        font-size: 17px;
+        text-align: center;
     }
 
-    .A {
+    .seguir {
         font-size: 1em;
+        width: 80%;
     }
 }

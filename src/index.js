@@ -8,8 +8,8 @@ import ErrorPages from './pages/Error/ErrorPages';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
-    <ErrorPages />
+    <App />
+    {/* <ErrorPages /> */}
   </React.StrictMode>
 );
 

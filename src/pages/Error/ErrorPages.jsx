@@ -3,10 +3,10 @@ import './ErrorPages.css'
 const ErrorPages = () => {
     return (
         <div class="error">
-            <img src="/assets/buscando.svg" alt="" />
-                <h1 className='H1'>404</h1>
-                <p className='P'>Oops! Page not found</p>
-                <a href="#" className='A'>Go back to homepage</a>
+            <img src="/assets/buscando.svg" alt="" className='imagenerror'/>
+                <h1 className='H1'>Alumno No encontrado</h1>
+                <p className='P'>Por favor ingrese el NIE del estudiante o verifique que el NIE  es correcto</p>
+                <a href="/#" className='btn seguir'>Ingresar Nie</a>
         </div>
     );
 }
