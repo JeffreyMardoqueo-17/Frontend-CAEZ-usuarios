@@ -7,22 +7,22 @@ const Alumno = {
     nombre: "Jeffrey Mardoqueo Jimenez Santos",
     grado: "noveno grado",
     mesesP: "7",
+    mesesD: "6"
 };
 
 const Tabla = () => {
     const handleDescargarPDF = () => {
         const titulo = 'DATOS DEL ALUMNO';
-        const columnas = ["NIE", "NOMBRE COMPLETO", "GRADO", "MESES PAGADOS"];
-        const data = [
-            { Campo: "NIE", Valor: Alumno.nie },
-            { Campo: "Nombre completo", Valor: Alumno.nombre },
-            { Campo: "Grado", Valor: Alumno.grado },
-            { Campo: "Meses pagados", Valor: Alumno.mesesP }
-        ];
-
+        const headers = ["NIE", "NOMBRE COMPLETO", "GRADO", "MESES PAGADOS", "MESES EN MORA"];
+        // const data = [
+        //     { Campo: "NIE", Valor: Alumno.nie },
+        //     { Campo: "Nombre completo", Valor: Alumno.nombre },
+        //     { Campo: "Grado", Valor: Alumno.grado },
+        //     { Campo: "Meses pagados", Valor: Alumno.mesesP }
+        // ];
+        const data = [Alumno.nie, Alumno.nombre, Alumno.grado, Alumno.mesesP, Alumno.mesesD]
         const nombreArchivo = `Informe_${Alumno.nombre.replace(/ /g, '')}_NIE${Alumno.nie}`;
-
-        generarPDF(titulo, columnas, data, nombreArchivo);
+        generarPDF(titulo, headers, data, nombreArchivo);
     };
 
     return (
