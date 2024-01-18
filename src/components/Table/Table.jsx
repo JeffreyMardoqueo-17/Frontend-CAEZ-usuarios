@@ -1,9 +1,10 @@
 import React from 'react';
+import { Table, Button } from 'reactstrap';
 import './Table.css';
 
 const Table = ({ headers, data, showDownloadPDFButton, onDownloadPDFClick }) => {
     return (
-        <table className="table">
+        <Table responsive striped>
             <thead>
                 <tr>
                     {headers.map((header, index) => (
@@ -14,26 +15,25 @@ const Table = ({ headers, data, showDownloadPDFButton, onDownloadPDFClick }) => 
             <tbody>
                 {data.map((row, rowIndex) => (
                     <tr key={rowIndex}>
-                        {Object.values(row).map((value, columnIndex) => (
-                            <td key={columnIndex} data-label={headers[columnIndex]}>
-                                {value}
-                            </td>
+                        {headers.map((header, columnIndex) => (
+                            <td key={columnIndex}>{row[header]}</td>
                         ))}
                     </tr>
                 ))}
             </tbody>
+
             {showDownloadPDFButton && (
                 <tfoot>
                     <tr>
-                        <td colSpan={headers.length + 1}>
-                            <button onClick={onDownloadPDFClick}>
+                        <td colSpan={headers.length}>
+                            <Button onClick={onDownloadPDFClick} color="primary">
                                 Descargar PDF
-                            </button>
+                            </Button>
                         </td>
                     </tr>
                 </tfoot>
             )}
-        </table>
+        </Table>
     );
 };
 
