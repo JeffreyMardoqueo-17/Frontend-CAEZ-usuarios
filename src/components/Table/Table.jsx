@@ -1,13 +1,16 @@
 import React from 'react';
-import './Table.css';
+import { Table as ReactstrapTable } from 'reactstrap';
+// import './Table.css';
 
 const Table = ({ headers, data, showDownloadPDFButton, onDownloadPDFClick }) => {
     return (
-        <table className="table">
+        <ReactstrapTable dark hover responsive striped>
             <thead>
                 <tr>
                     {headers.map((header, index) => (
-                        <th key={index}>{header}</th>
+                        <th key={index}>
+                            {header}
+                        </th>
                     ))}
                 </tr>
             </thead>
@@ -25,7 +28,7 @@ const Table = ({ headers, data, showDownloadPDFButton, onDownloadPDFClick }) => 
             {showDownloadPDFButton && (
                 <tfoot>
                     <tr>
-                        <td colSpan={headers.length + 1}>
+                        <td colSpan={headers.length}>
                             <button onClick={onDownloadPDFClick}>
                                 Descargar PDF
                             </button>
@@ -33,8 +36,9 @@ const Table = ({ headers, data, showDownloadPDFButton, onDownloadPDFClick }) => 
                     </tr>
                 </tfoot>
             )}
-        </table>
+        </ReactstrapTable>
     );
 };
 
 export default Table;
+
