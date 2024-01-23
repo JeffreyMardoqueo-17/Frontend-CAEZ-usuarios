@@ -17,21 +17,20 @@ const Table = ({ headers, data, showDownloadPDFButton, onDownloadPDFClick }) => 
             <tbody>
                 {data.map((row, rowIndex) => (
                     <tr key={rowIndex}>
-                        {Object.values(row).map((value, columnIndex) => (
-                            <td key={columnIndex} data-label={headers[columnIndex]}>
-                                {value}
-                            </td>
+                        {headers.map((header, columnIndex) => (
+                            <td key={columnIndex}>{row[header]}</td>
                         ))}
                     </tr>
                 ))}
             </tbody>
+
             {showDownloadPDFButton && (
                 <tfoot>
                     <tr>
                         <td colSpan={headers.length}>
                             <button onClick={onDownloadPDFClick}>
                                 Descargar PDF
-                            </button>
+                            </Button>
                         </td>
                     </tr>
                 </tfoot>
