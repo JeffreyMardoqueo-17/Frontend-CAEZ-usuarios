@@ -4,7 +4,7 @@ import { Table as ReactstrapTable } from 'reactstrap';
 
 const Table = ({ headers, data, showDownloadPDFButton, onDownloadPDFClick }) => {
     return (
-        <ReactstrapTable dark hover responsive striped>
+        <ReactstrapTable  hover responsive striped>
             <thead>
                 <tr>
                     {headers.map((header, index) => (
@@ -29,7 +29,7 @@ const Table = ({ headers, data, showDownloadPDFButton, onDownloadPDFClick }) => 
                 <tfoot>
                     <tr>
                         <td colSpan={headers.length}>
-                            <button onClick={onDownloadPDFClick}>
+                            <button onClick={onDownloadPDFClick} className='radius'>
                                 Descargar PDF
                             </button>
                         </td>

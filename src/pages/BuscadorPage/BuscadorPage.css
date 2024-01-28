@@ -18,13 +18,13 @@
 }
 
 /* quitar el cosito de decremneto o incremento dle input number */
-.form-control input[type="number"]::-webkit-inner-spin-button,
-.form-control input[type="number"]::-webkit-outer-spin-button {
+.form-controll input[type="number"]::-webkit-inner-spin-button,
+.form-controll input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
-.form-control input[type="number"] {
+.form-controll input[type="number"] {
     -moz-appearance: textfield;
 }
 
@@ -108,7 +108,7 @@
     flex-direction: column;
 }
 
-.form-control {
+.form-controll {
     width: 100%;
     position: relative;
     margin-bottom: 24px;
@@ -157,7 +157,7 @@ input~i {
      .imgCel {
         display: block;
         width: 80%; /* Ajusta el ancho según tus necesidades */
-        margin: 0 auto; /* Ajusta el margen según tus necesidades */
+        margin: 0 auto; 
     }
 
     .title {
@@ -198,7 +198,7 @@ input~i {
         text-align: center;
         justify-content: center;
     }
-    .btn{
+    .boton{
         width: 100%;
     }
     .buscar{
@@ -208,4 +208,26 @@ input~i {
         margin-left: 0;
         /* Elimina el margen izquierdo en dispositivos móviles */
     }
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--bgG);
+    color: var(--text2);
+    border-radius: 5px;
+    cursor: pointer;
+    bottom: 0;
+    user-select: none;
+    width: 100%;
+    font-weight: 600;;
+    border: 1px solid var(--border);
+    user-select: none;
+}
+
+button:hover {
+    background: var(--bg2);
+    border: none;
+    color: var(--text2);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }

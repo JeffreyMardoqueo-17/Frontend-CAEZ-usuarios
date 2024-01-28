@@ -53,7 +53,7 @@ const Result = () => {
             </div>
 
             <div className="container">
-                <button onClick={handleClick} className="btn">
+                <button onClick={handleClick} className="">
                     CONTINUAR
                 </button>
             </div>

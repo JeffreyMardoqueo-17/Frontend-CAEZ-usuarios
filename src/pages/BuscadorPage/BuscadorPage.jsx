@@ -43,11 +43,11 @@ const BuscadorPage = () => {
                         Por favor, ingrese el número de NIE del estudiante, para poder realizar la consulta de sus Pagos
                     </p>
                     <form className="login-form">
-                        <div className="form-control">
+                        <div className="form-controll">
                             <input type="number" id='nie' value={nie} onChange={handleNieChange} placeholder="Nie del estudiante" required />
                             <i className="fas fa-user"></i>
                         </div>
-                        <button className="btn buscar" onClick={buscarAlumno}>Buscar</button>
+                        <button className="boton buscar radius" onClick={buscarAlumno}>Buscar</button>
                     </form>
                 </div>
             </div>

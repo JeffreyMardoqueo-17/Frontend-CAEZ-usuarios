@@ -5,7 +5,7 @@ const TablaPage = () => {
     return (
         <div>
             <Menu />
-            <div className='m-5'>
+            <div className='m-2'>
                 <Tabla />
             </div>
         </div>
