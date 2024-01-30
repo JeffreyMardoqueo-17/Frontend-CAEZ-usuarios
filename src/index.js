@@ -5,10 +5,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ErrorPages from './pages/Error/ErrorPages';
 import 'bootstrap/dist/css/bootstrap.min.css';
-<<<<<<< HEAD
-=======
-
->>>>>>> 077055e6e83ac29879f4979c50bc54181771574c
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
