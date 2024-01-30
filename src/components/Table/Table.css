@@ -20,7 +20,9 @@
     border: none;
 }
 /* Resto del código... */
-
+.table thead{
+    text-transform: uppercase;
+}
 
 .table td,
 .table th {
