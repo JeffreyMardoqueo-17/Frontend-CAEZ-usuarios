@@ -30,11 +30,10 @@
 
 
 .conti {
-    min-height: 100vh;
-    width: 100%;
+    min-height: 100%;
+    width: 99%;
     display: flex;
 }
-
 .side {
     background: url('/public/assets/lOGOoRIGINAL.svg') no-repeat;
     background-size: contain;
@@ -42,6 +41,7 @@
     width: 50%;
     display: flex;
     align-items: center;
+    align-content: center;;
     /* border-right: 3px solid var(--bg2);
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px; */

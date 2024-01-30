@@ -1,10 +1,10 @@
 import React from 'react';
 import { Table as ReactstrapTable } from 'reactstrap';
-// import './Table.css';
+import './Table.css';
 
 const Table = ({ headers, data, showDownloadPDFButton, onDownloadPDFClick }) => {
     return (
-        <ReactstrapTable  hover responsive striped>
+        <ReactstrapTable  hover  striped >
             <thead>
                 <tr>
                     {headers.map((header, index) => (

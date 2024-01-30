@@ -49,7 +49,7 @@ const Menu = () => {
     return (
         <div>
             <ScrollNav /> {/* Agregamos el componente ScrollNav aquí */}
-            <nav>
+            <nav className=''>
                 <input type="checkbox" id="check" checked={menuOpen} onChange={toggleMenu} />
                 <label htmlFor="check" className="checkbtn">
                     {menuOpen ? (

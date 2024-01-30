@@ -21,13 +21,15 @@ body {
     padding: 40px;
     gap:40px;
     margin-bottom: 0;
-    margin-top: 20%;
+    /* margin-top: 20%; */
 }
 
 .imagenerror {
     height: 20%;
     width: 20%;
     transition: transform 1s ease-in-out;
+    /* background-color: red; */
+    /* margin-top: -200px; */
     /* Transición de 1 segundo con aceleración y desaceleración */
 }
 

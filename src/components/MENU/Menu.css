@@ -55,6 +55,7 @@ nav ul li a {
     border-radius: 3px;
     text-transform: uppercase;
     font-weight: bold;
+    text-decoration: none;
 }
 
 li a:hover {
@@ -120,6 +121,9 @@ ul.show-menu {
 @media (max-width: 858px) {
     .checkbtn {
         display: block;
+    }
+    nav{
+        width: 100%;
     }
 
     ul {
