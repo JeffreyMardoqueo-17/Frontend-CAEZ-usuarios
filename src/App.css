@@ -21,7 +21,9 @@
   background: var(--primary);
   user-select: var(--bg);
 }
-
+a{
+  color: #ffff;
+}
 ::-webkit-scrollbar {
   width: 6px;
   /* Ancho de la barra de desplazamiento */
