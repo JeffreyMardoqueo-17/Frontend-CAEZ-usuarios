@@ -3,9 +3,9 @@ import './Menu.css';
 import { IoMdMenu, IoIosCloseCircleOutline } from 'react-icons/io';
 
 const links = [
-    { text: 'INICIO', href: '#', },
+    { text: 'INICIO', href: '#', className: 'active' },
     { text: 'NOTAS', href: '#' },
-    { text: 'Contactar', href: '/Contacto' },
+    { text: 'Contactar', href: '#' },
     { text: 'Informacion del cole', href: '#' },
 ];
 
