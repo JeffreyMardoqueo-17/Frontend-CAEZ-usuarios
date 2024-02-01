@@ -19,16 +19,21 @@ nav {
     padding: 20px;
     /* Ajusta el padding según sea necesario */
 }
+
+
 .logo {
     height: 40px;
     float: left;
     margin-right: 20px;
 }
+
+
 nav ul {
     float: right;
     margin-right: 20px;
     z-index: 400;
 }
+
 nav.fixed {
     position: fixed;
     top: 0;
@@ -36,11 +41,13 @@ nav.fixed {
     z-index: 1000;
     transition: all .1s;
 }
+
 nav ul li {
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
 }
+
 nav ul li a {
     color: var(--text2);
     font-size: 18px;

@@ -69,9 +69,5 @@ const BuscadorPage = () => {
         </div>
     );
 };
-<<<<<<< HEAD
 
 export default BuscadorPage;
-=======
-export default BuscadorPage;
->>>>>>> ef0fb69343a054dee6ae97a65e67c7a09af0a69e

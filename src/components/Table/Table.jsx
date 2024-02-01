@@ -17,9 +17,9 @@ const Table = ({ headers, data, showDownloadPDFButton, onDownloadPDFClick }) => 
             <tbody>
                 {data.map((row, rowIndex) => (
                     <tr key={rowIndex}>
-                        {headers.map((header, columnIndex) => (
-                            <td key={columnIndex}>
-                                {row[header]}
+                        {Object.values(row).map((value, columnIndex) => (
+                            <td key={columnIndex} data-label={headers[columnIndex]}>
+                                {value}
                             </td>
                         ))}
                     </tr>
