@@ -1,0 +1,44 @@
+.Perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    /* Centra vertical y horizontalmente */
+    width: 80%;
+    /* Usa porcentajes para el tamaño */
+    max-width: 90%;
+    /* Limita el tamaño máximo */
+    overflow: auto;
+    height: 100%;
+
+    user-select: none;
+}
+
+/* Media query para tamaños de pantalla más grandes */
+@media screen and (min-width: 768px) {
+    .Perfil {
+        max-width: 600px;
+        /* Ajusta según sea necesario para tamaños de pantalla más grandes */
+    }
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--bgG);
+    font-weight: 600;
+}
+
+.name {
+    font-size: 40px;
+    color: var(--white);
+    margin: 0;
+}
+
+h4 {
+    font-size: 25px;
+    color: var(--bg2);
+}

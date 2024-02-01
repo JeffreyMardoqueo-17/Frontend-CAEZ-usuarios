@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #303433;
+}
+
+:root {
+    --primary: #fff;
+    --bg: #020240;
+    --bgG: #080820;
+    --bg2: #4D51B3;
+    --text1: #000;
+    --text2: #ffff;
+    --border: #f9ce0f;
+    --gris: #4e4c4c;
+}
+
+/* quitar el cosito de decremneto o incremento dle input number */
+.form-controll input[type="number"]::-webkit-inner-spin-button,
+.form-controll input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form-controll input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+.conti {
+    min-height: 100%;
+    width: 99%;
+    display: flex;
+}
+.side {
+    background: url('/public/assets/lOGOoRIGINAL.svg') no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    align-content: center;;
+    /* border-right: 3px solid var(--bg2);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px; */
+}
+
+.side-img {
+    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-left: 110px;
+    /* Alinea la imagen al centro horizontalmente */
+}
+
+.main {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px; */
+    margin-left: 10px;
+}
+
+.login-container {
+    /* max-width: 450px; */
+    /* padding: 10px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    color: var(--bgG);
+    margin-left: 15px;
+}
+
+.separator {
+    width: 90%;
+    height: 4px;
+    background-color: var(--bg2);
+    margin: 24px;
+}
+
+.welcome-message {
+    text-align: center;
+    font-size: 17px;
+    line-height: 28px;
+    margin-bottom: 30px;
+    color: var(--gris);
+}
+
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-controll {
+    width: 100%;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.1em;
+}
+
+input {
+    width: 300px;
+    background: #e6e6e6aa;
+    color: var(--bg2);
+    letter-spacing: 0.5px;
+    padding: 20px 50px;
+    /* margin: 10px; */
+}
+
+input:hover {
+    border: 1px solid var(--bg2);
+}
+
+input~i {
+    position: absolute;
+    left: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text2);
+    transition: color 0.4s;
+}
+
+.imgCel{
+    display: none;
+}
+
+@media (max-width: 780px) {
+    .conti {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+     .imgCel {
+        display: block;
+        width: 80%; /* Ajusta el ancho según tus necesidades */
+        margin: 0 auto; 
+    }
+
+    .title {
+        font-size: 45px;
+        margin-top: 0;
+    }
+
+    .conti {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .side {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+        margin-top: 0;
+        border: none;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+    }
+
+    .login-container {
+        max-width: 100%;
+    }
+
+    .login-container {
+        /* max-width: 450px; */
+        /* padding: 10px; */
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .boton{
+        width: 100%;
+    }
+    .buscar{
+        margin-right: 0;
+    }
+    .side-img {
+        margin-left: 0;
+        /* Elimina el margen izquierdo en dispositivos móviles */
+    }
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--bgG);
+    color: var(--text2);
+    border-radius: 5px;
+    cursor: pointer;
+    bottom: 0;
+    user-select: none;
+    width: 100%;
+    font-weight: 600;;
+    border: 1px solid var(--border);
+    user-select: none;
+}
+
+button:hover {
+    background: var(--bg2);
+    border: none;
+    color: var(--text2);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}

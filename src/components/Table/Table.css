@@ -1,0 +1,37 @@
+:root {
+    --primary: #fff;
+    --bg: #020240;
+    --bgG: #080820;
+    --bg2: #4D51B3;
+    --rayas: #cdd0ff;
+    --text1: #000;
+    --text2: #ffff;
+    --border: #f9ce0f;
+    --gris: #4e4c4c;
+}
+
+.table {
+    width: 100%;
+    margin: 20px auto;
+    user-select: none;
+}
+
+.table th th {
+    border: none;
+}
+/* Resto del código... */
+.table thead{
+    text-transform: uppercase;
+}
+
+.table td,
+.table th {
+    padding: 12px 15px;
+    border: 1px solid var(--bg2);
+    text-align: center;
+    font-size: 16px;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: var(--rayas);
+}
