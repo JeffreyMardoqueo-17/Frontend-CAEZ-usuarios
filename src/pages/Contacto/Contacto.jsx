@@ -18,8 +18,11 @@ const Contacto = () => {
                         </p>
                         <form className="login-form">
                             <div className="form-controll">
-                                <input type="text" />
-                                <i className="fas fa-user"></i>
+                                <input type="text" placeholder='Escriba su nombre' />
+                                <br />
+                                <hr />
+                                <input type="email" placeholder='Correo electronico' />
+
                             </div>
                             <button className="boton buscar radius" >
                                 Buscar
