@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--primary);
+    font-family: sans-serif;
+    align-content: center;
+    align-items: center;
+}
+
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+    gap:40px;
+    margin-bottom: 0;
+    /* margin-top: 20%; */
+}
+
+.imagenerror {
+    height: 20%;
+    width: 20%;
+    transition: transform 1s ease-in-out;
+    /* background-color: red; */
+    /* margin-top: -200px; */
+    /* Transición de 1 segundo con aceleración y desaceleración */
+}
+
+.imagenerror:hover {
+    animation: pulse 2s ease-in-out infinite;
+    /* Gira 360 grados en el hover */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.H1 {
+    font-size: 50px;
+    color: var(--bgG);
+    margin: 0;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+.P {
+    font-size: 20px;
+    margin: 0;
+    margin-top: 20px;
+    color: var(--bgG);
+}
+
+.seguir {
+    color: var(--text2);
+    text-decoration: none;
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 50px;
+    width: 50%;
+    animation: bounce 1s ease-in-out infinite;
+}
+
+.seguir:hover {
+    animation: none;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-5px);
+    }
+
+    60% {
+        transform: translateY(-4px);
+    }
+}
+
+@media (max-width: 768px) {
+    .H1 {
+        font-size: 30px;
+    }
+
+    .P {
+        font-size: 17px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .H1 {
+        font-size: 30px;
+    }
+
+    .imagenerror {
+        width: 80%;
+        height: 60%;
+    }
+
+    .P {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .seguir {
+        font-size: 1em;
+        width: 80%;
+    }
+}

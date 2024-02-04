@@ -3,9 +3,9 @@ import './Menu.css';
 import { IoMdMenu, IoIosCloseCircleOutline } from 'react-icons/io';
 
 const links = [
-    { text: 'INICIO', href: '#', className: 'active' },
+    { text: 'INICIO', href: '#', },
     { text: 'NOTAS', href: '#' },
-    { text: 'Contactar', href: '#' },
+    { text: 'Contactar', href: '/Contacto' },
     { text: 'Informacion del cole', href: '#' },
 ];
 
@@ -49,7 +49,7 @@ const Menu = () => {
     return (
         <div>
             <ScrollNav /> {/* Agregamos el componente ScrollNav aquí */}
-            <nav>
+            <nav className=''>
                 <input type="checkbox" id="check" checked={menuOpen} onChange={toggleMenu} />
                 <label htmlFor="check" className="checkbtn">
                     {menuOpen ? (
@@ -62,7 +62,7 @@ const Menu = () => {
                 </label>
 
                 <a href="#" className="enlace" onClick={handleLinkClick}>
-                    <img src="/logo192.png" alt="Logo del cole" className="logo" />
+                    <img src="/logonsinbac.svg" alt="Logo del cole" className="logo" />
                 </a>
                 <ul className={menuOpen ? 'show-menu' : ''}>
                     {links.map((link, index) => (

@@ -1,0 +1,81 @@
+{
+  "alumnos": [
+    {
+      "Nie": "1",
+      "Nombre": "Ana García",
+      "Grado": "Secundaria",
+      "Turno": "Mañana",
+      "MesesPagos": 6,
+      "MesesEnDeuda": 6,
+      "MesesPagados": ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio"],
+      "MesesEnDeudaList": [
+        "Julio",
+        "Agosto",
+        "Septiembre",
+        "Octubre",
+        "Noviembre",
+        "Diciembre"
+      ]
+    },
+    {
+      "Nie": "2",
+      "Nombre": "Carlos López",
+      "Grado": "Bachillerato",
+      "Turno": "Tarde",
+      "MesesPagos": 8,
+      "MesesEnDeuda": 4,
+      "MesesPagados": [
+        "Enero",
+        "Febrero",
+        "Marzo",
+        "Abril",
+        "Mayo",
+        "Junio",
+        "Julio",
+        "Agosto"
+      ],
+      "MesesEnDeudaList": ["Septiembre", "Octubre", "Noviembre", "Diciembre"]
+    },
+    {
+      "Nie": "3",
+      "Nombre": "Elena Martínez",
+      "Grado": "Primaria",
+      "Turno": "Mañana",
+      "MesesPagos": 6,
+      "MesesEnDeuda": 6,
+      "MesesPagados": ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio"],
+      "MesesEnDeudaList": [
+        "Julio",
+        "Agosto",
+        "Septiembre",
+        "Octubre",
+        "Noviembre",
+        "Diciembre"
+      ]
+    },
+    {
+      "Nie": "4",
+      "Nombre": "Jeffrey Mardoqueo Jimenez Santos",
+      "Grado": "Noveno Grado",
+      "Turno": "Mañana",
+      "MesesPagos": 7,
+      "MesesEnDeuda": 5,
+      "MesesPagados": [
+        "Enero",
+        "Febrero",
+        "Marzo",
+        "Abril",
+        "Mayo",
+        "Junio",
+        "Julio"
+      ],
+      "MesesEnDeudaList": [
+        "Agosto",
+        "Septiembre",
+        "Octubre",
+        "Noviembre",
+        "Diciembre"
+      ]
+    }
+  ]
+}
