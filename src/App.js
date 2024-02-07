@@ -21,6 +21,7 @@ function App() {
           <Route path="/result/Tablas" element={<TablaPage />}/>
           <Route path='/NoEncontrado' element={<ErrorPages />}/>
           <Route path='/Contacto' element={<Contacto />}/>
+
           <Route path='/InformacionColegio' element={<InforCole />}/>
         </Routes>
       </div>
