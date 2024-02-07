@@ -9,6 +9,7 @@ import Contacto from './pages/Contacto/Contacto';
 
 import { useNavigate } from 'react-router-dom';
 import ErrorPages from './pages/Error/ErrorPages';
+import InforCole from './pages/InforCole/InforCole';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/result/Tablas" element={<TablaPage />}/>
           <Route path='/NoEncontrado' element={<ErrorPages />}/>
           <Route path='/Contacto' element={<Contacto />}/>
+          <Route path='/InformacionColegio' element={<InforCole />}/>
         </Routes>
       </div>
     </Router>
