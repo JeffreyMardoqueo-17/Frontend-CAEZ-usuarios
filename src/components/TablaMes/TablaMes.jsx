@@ -1,4 +1,6 @@
 import React from 'react';
+import generarPDF from '../../Fuctions/GenerarPDF';
+import Table from 
 import generarPDF from '../../../Fuctions/GenerarPDF';
 
 const MesInfore = {
@@ -15,6 +17,8 @@ const TablaMes = () => {
         const titulo = 'DATOS de Mes de Pago';
         const columnas = ["MES", "FECHA QUE SE CANSELO", "ALUMNO", "RECIBIO", "MULTA", "MENSUALIDAD", "TOTAL"];
         const data = [
+            [MesInfore.mes, MesInfore.fechaP, MesInfore.alumno, MesInfore.recibio, MesInfore.multa, MesInfore.mensualidad, MesInfore.total]
+=======
             [MesInfore.mes, MesInfore.fechaP,MesInfore.alumno, MesInfore.recibio, MesInfore.multa, MesInfore.mensualidad, MesInfore.total]
         ];
 
@@ -22,6 +26,12 @@ const TablaMes = () => {
     };
     return (
         <div className='Table-contenedor'>
+            <Table
+                headers={[  "MES", "FECHA QUE SE CANSELO", "ALUMNO", "RECIBIO", "MULTA", "MENSUALIDAD", "TOTAL"]}
+                data={[MesInfore]}
+                showDownloadPDFButton={true}
+                onDownloadPDFClick={handleDescargarPDF}
+            />
             <table className='table'>
                 <thead>
                     <tr>

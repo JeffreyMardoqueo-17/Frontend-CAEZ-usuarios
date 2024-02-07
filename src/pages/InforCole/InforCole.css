@@ -1,0 +1,39 @@
+.InforCole {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.Mision,
+.Vision,
+.Valores {
+    width: 100%;
+    max-width: 800px;
+    /* Ajusta el ancho máximo según tus necesidades */
+    margin-bottom: 20px;
+    /* Espacio entre cada sección */
+    background-color: #f0f0f0;
+    /* Color de fondo para cada sección */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Estilos adicionales para hacerlo responsive */
+@media screen and (min-width: 768px) {
+    .InforCole {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .Mision,
+    .Vision,
+    .Valores {
+        width: 33%;
+        /* Distribuir en tres columnas en pantallas grandes */
+        margin-bottom: 0;
+        margin-right: 20px;
+        /* Espacio entre cada sección en pantallas grandes */
+    }
+}   
