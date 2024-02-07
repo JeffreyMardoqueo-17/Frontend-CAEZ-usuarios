@@ -8,6 +8,7 @@ const TablaPage = () => {
             <Menu />
             <div className='m-2'>
                 <Tabla />
+
                 <TablaMes />
             </div>
         </div>
