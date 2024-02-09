@@ -8,7 +8,7 @@ const links = [
     { text: 'Contactar', href: '/Contacto' },
 
     { text: 'Informacion del cole', href: '/InformacionColegio' },
-    { text: 'Informacion del cole', href: '#'
+    { text: 'Informacion del cole', href: '#'}
 ];
 
 const ScrollNav = () => {

@@ -6,9 +6,6 @@ const Table = ({ headers, data, showDownloadPDFButton, onDownloadPDFClick }) => 
     return (
 
         <ReactstrapTable responsive hover  striped >
-
-        <ReactstrapTable  hover  striped >
-
             <thead>
                 <tr>
                     {headers.map((header, index) => (
@@ -43,6 +40,5 @@ const Table = ({ headers, data, showDownloadPDFButton, onDownloadPDFClick }) => 
         </ReactstrapTable>
     );
 };
-
 export default Table;
 

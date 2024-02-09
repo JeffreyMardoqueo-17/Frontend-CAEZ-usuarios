@@ -21,11 +21,6 @@ const Tabla = () => {
         generarPDF(titulo, headers, [rowData], nombreArchivo);
     };
 
-        const data = [Alumno];
-        const nombreArchivo = `Informe_${Alumno.nombre.replace(/ /g, '')}_NIE${Alumno.nie}`;
-        generarPDF(titulo, headers, data, nombreArchivo);
-    };
-
     return (
         <div className='Table-contenedor'>
             <Table
