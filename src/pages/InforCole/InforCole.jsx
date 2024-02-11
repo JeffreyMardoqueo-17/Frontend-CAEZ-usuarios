@@ -4,7 +4,6 @@ import Menu from '../../components/MENU/Menu';
 const InforCole = () => {
     return (
         <div>
-            <Menu />
             <div className='InforCole m-5'>
                 <div className='Mision'>
                     <h3 className='tit'>Misión</h3>
