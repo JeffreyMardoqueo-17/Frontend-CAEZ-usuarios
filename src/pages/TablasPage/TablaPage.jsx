@@ -7,9 +7,12 @@ const TablaPage = () => {
         <div>
             <Menu />
             <div className='m-2'>
-                <Tabla />
+                <div className='m-4'>
 
-                <TablaMes />
+                    <Tabla />
+
+                    <TablaMes />
+                </div>
             </div>
         </div>
     );
