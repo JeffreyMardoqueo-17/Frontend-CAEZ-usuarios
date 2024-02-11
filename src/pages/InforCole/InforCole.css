@@ -3,21 +3,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 3px;
+    margin: 0;
 }
-
+.tit{
+    color: var(--bgG);
+    text-transform: uppercase;
+    font-weight: bold;
+}
 .Mision,
 .Vision,
 .Valores {
     width: 100%;
-    max-width: 800px;
+    max-width: 100%;
+    min-width: 200px;
     /* Ajusta el ancho máximo según tus necesidades */
     margin-bottom: 20px;
-    /* Espacio entre cada sección */
-    background-color: #f0f0f0;
     /* Color de fondo para cada sección */
     padding: 20px;
     border-radius: 8px;
+    text-align: left;
 }
 
 /* Estilos adicionales para hacerlo responsive */
@@ -36,4 +41,4 @@
         margin-right: 20px;
         /* Espacio entre cada sección en pantallas grandes */
     }
-}   
+}

@@ -5,11 +5,11 @@ import TablaMes from '../../components/TablaMes/TablaMes';
 const TablaPage = () => {
     return (
         <div>
-            <Menu />
             <div className='m-2'>
-                <Tabla />
-
-                <TablaMes />
+                <div className='m-4'>
+                    <Tabla />
+                    <TablaMes />
+                </div>
             </div>
         </div>
     );
