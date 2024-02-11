@@ -29,7 +29,8 @@ const Result = () => {
     const alumno = state.alumno;
 
     const handleClick = () => {
-        navigate('/result/Tablas');
+        navigate('/data/Tablas');
+        // navigate('/Layout')
     };
     return (
         <div className="result-container">

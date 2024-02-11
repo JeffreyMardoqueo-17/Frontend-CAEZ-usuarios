@@ -3,11 +3,12 @@ import './Menu.css';
 import { IoMdMenu, IoIosCloseCircleOutline } from 'react-icons/io';
 
 const links = [
+
     { text: 'INICIO', href: '/result/Tablas', },
     { text: 'NOTAS', href: '#' },
-    { text: 'Contactar', href: '/Contacto' },
+    { text: 'Contactar', href: '/data/Contacto' },
 
-    { text: 'Informacion del cole', href: '/InformacionColegio' },
+    { text: 'Informacion del cole', href: '/data/InformacionColegio' },
     { text: 'Informacion del cole', href: '#'}
 ];
 
