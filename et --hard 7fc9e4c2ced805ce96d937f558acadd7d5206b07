@@ -1,0 +1,233 @@
+[33mcommit 7fc9e4c2ced805ce96d937f558acadd7d5206b07[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/InforCole[m[33m, [m[1;32mInforCole[m[33m)[m
+Author: Jeffrey Mardoqueo <jeffreymardoqueo260@gmail.com>
+Date:   Fri Feb 9 14:53:21 2024 -0600
+
+    Reparacion de errores de duplicacion
+
+[33mcommit 122f5a7e5e9a60d1ff6b227fe0e65fd7031e6697[m
+Merge: 9518676 bc6c115
+Author: Jeffrey Mardoqueo <jeffreymardoqueo260@gmail.com>
+Date:   Wed Feb 7 10:07:08 2024 -0600
+
+    Merge branch 'InforCole' of https://github.com/JeffreyMardoqueo-17/Frontend-CAEZ-usuarios into InforCole
+
+[33mcommit 9518676a656ba3890315a4191859e5c413366673[m
+Author: Jeffrey Mardoqueo <jeffreymardoqueo260@gmail.com>
+Date:   Wed Feb 7 10:06:20 2024 -0600
+
+    section del Informacion dle Colegio, mision y vision
+
+[33mcommit bc6c115a1bbec96d07d2e9e2bb6d0bcb51ec531f[m
+Merge: 3cbc10a b3f026c
+Author: Jeff-Mardoqueo <126411958+JeffreyMardoqueo-17@users.noreply.github.com>
+Date:   Tue Feb 6 21:32:31 2024 -0600
+
+    Merge branch 'main' into InforCole
+
+[33mcommit 3cbc10a728ae09249c31e24b2eeda1a921f8b465[m
+Author: Jeffrey Mardoqueo <jeffreymardoqueo260@gmail.com>
+Date:   Tue Feb 6 21:07:25 2024 -0600
+
+    Parte de la informacion del colegio, caso lista
+
+[33mcommit 166287279e97a29973966af33703f5be39950147[m[33m ([m[1;31morigin/Modificaciones[m[33m, [m[1;32mModificaciones[m[33m)[m
+Author: Jeffrey Mardoqueo <jeffreymardoqueo260@gmail.com>
+Date:   Sun Feb 4 12:24:52 2024 -0600
+
+    La tabla responsive listo
+
+[33mcommit b3f026ce476cf17c77aed629c2c91cd423da9266[m
+Merge: 59f71a7 325bfce
+Author: Jeff-Mardoqueo <126411958+JeffreyMardoqueo-17@users.noreply.github.com>
+Date:   Thu Feb 1 11:37:56 2024 -0600
+
+    Merge pull request #2 from JeffreyMardoqueo-17/Contacto
+    
+    Contacto
+
+[33mcommit 325bfce789bb20994cd9c7ba9065edb93cd765ec[m[33m ([m[1;31morigin/Contacto[m[33m, [m[1;32mContacto[m[33m)[m
+Author: Jeffrey Mardoqueo <jeffreymardoqueo260@gmail.com>
+Date:   Thu Feb 1 11:36:21 2024 -0600
+
+    aqui la parte del contacto
+
+[33mcommit a87a1c44fe09a9b89469f0d739614d8b3be1d051[m
+Author: Jeffrey Mardoqueo <jeffreymardoqueo260@gmail.com>
+Date:   Thu Feb 1 11:23:07 2024 -0600
+
+    LA PARTE DE HUBICACION DERECHA E IZQUIERDA
+
+[33mcommit 02f4e9802f7520cd2991fce5754cfc5e92368ef3[m
+Author: Jeffrey Mardoqueo <jeffreymardoqueo260@gmail.com>
+Date:   Thu Feb 1 10:55:58 2024 -0600
+
+    parte principal listo
+
+[33mcommit 4c0361a3b1f421ae87a0f48f957c765863d5d592[m[33m ([m[1;31morigin/BUSCADORPAGE[m[33m, [m[1;32mBUSCADORPAGE[m[33m)[m
+Author: Jeffrey Mardoqueo <jeffreymardoqueo260@gmail.com>
+Date:   Wed Jan 31 20:32:19 2024 -0600
+
+    Revert "Creacion de componentes y Archivos"
+    
+    This reverts commit 61868fc0defe6099391f89e4fa1843d28b9c364f, reversing
+    changes made to 44bd805f0a11f0be18f15873810c5c97240104c3.
+
+[33mcommit 9e2d4efe5f5421f793b1f61937fe06c925029511[m
+Author: Jeffrey Mardoqueo <jeffreymardoqueo260@gmail.com>
+Date:   Wed Jan 31 20:30:58 2024 -0600
+
+    Revert "Revert "cambios de la parte del frontend""
+    
+    This reverts commit cbbedb4254aa2d51a23b2c16a33a2fdb5d45d205.
+
+[33mcommit cbbedb4254aa2d51a23b2c16a33a2fdb5d45d205[m
+Author: Jeffrey Mardoqueo <jeffreymardoqueo260@gmail.com>
+Date:   Wed Jan 31 20:24:19 2024 -0600
+
+    Revert "cambios de la parte del frontend"
+    
+    This reverts commit 44bd805f0a11f0be18f15873810c5c97240104c3.
+
+[33mcommit 61868fc0defe6099391f89e4fa1843d28b9c364f[m
+Merge: 44bd805 ef0fb69
+Author: Jeffrey Mardoqueo <jeffreymardoqueo260@gmail.com>
+Date:   Wed Jan 31 16:21:17 2024 -0600
+
+    Creacion de componentes y Archivos
+
+[33mcommit 44bd805f0a11f0be18f15873810c5c97240104c3[m
+Author: Jeffrey Mardoqueo <jeffreymardoqueo260@gmail.com>
+Date:   Wed Jan 31 16:18:41 2024 -0600
+
+    cambios de la parte del frontend
+
+[33mcommit 6588ebad179961ed275f9e66a33b2fbe817a40ba[m
+Author: Jeffrey Mardoqueo <jeffreymardoqueo260@gmail.com>
+Date:   Tue Jan 30 13:11:28 2024 -0600
+
+    aqui si hay cosas buenas y cosas malas de la funcione
+
+[33mcommit ef0fb69343a054dee6ae97a65e67c7a09af0a69e[m
+Author: Jeffrey Mardoqueo <jeffreymardoqueo260@gmail.com>
+Date:   Tue Jan 30 12:49:38 2024 -0600
+
+    cambios de errores listos
+
+[33mcommit 8bdd47e381d330ff6863b2fd0201ea73ab2cf85d[m
+Merge: e337624 077055e
+Author: Jeffrey Mardoqueo <jeffreymardoqueo260@gmail.com>
+Date:   Tue Jan 30 08:32:31 2024 -0600
+
+    cambios listos
+
+[33mcommit e3376248cc4b513c0f2e9938ee2df8d82e768605[m
+Author: Jeffrey Mardoqueo <jeffreymardoqueo260@gmail.com>
+Date:   Tue Jan 30 08:28:55 2024 -0600
+
+    aqui hice cabios en el frontend
+
+[33mcommit 878ac09be8f7b8d65b37cfe09fb54a0d0027c11f[m
+Author: Jeffrey Mardoqueo <jeffreymardoqueo260@gmail.com>
+Date:   Sun Jan 28 14:13:18 2024 -0600
+
+    vcabios de la parte del frontend
+
+[33mcommit fcf829f664435b51e861500aff0f1d7a5cba855b[m
+Author: Jeffrey Mardoqueo <jeffreymardoqueo260@gmail.com>
+Date:   Tue Jan 23 10:25:58 2024 -0600
+
+    aqui ya fucniona todo, pero hay problemas con el importar reacct-strap, porque afecta lo de mas del diseño
+
+[33mcommit 077055e6e83ac29879f4979c50bc54181771574c[m
+Author: Jeffrey Mardoqueo <jeffreymardoqueo260@gmail.com>
+Date:   Tue Jan 23 10:15:15 2024 -0600
+
+    Aqui se arreglo la fusion+
+
+[33mcommit f5265d7354b48cda149927fdb4bbf08db0485a6e[m
+Merge: c2cae06 08943cf
+Author: Jeffrey Mardoqueo <jeffreymardoqueo260@gmail.com>
+Date:   Tue Jan 23 10:13:25 2024 -0600
+
+    Merge branch 'BUSCADORPAGE' of https://github.com/JeffreyMardoqueo-17/Frontend-CAEZ-usuarios into BUSCADORPAGE
+
+[33mcommit c2cae062d1bb47fa913e2914efa0e41394c92753[m
+Author: Jeffrey Mardoqueo <jeffreymardoqueo260@gmail.com>
+Date:   Tue Jan 23 09:51:34 2024 -0600
+
+    aqui todo bien con la tabla pero no con los botones
+
+[33mcommit c2b11cdafff9abdfa61db4e7820274097e7b1ab3[m
+Author: Jeffrey Mardoqueo <jeffreymardoqueo260@gmail.com>
+Date:   Mon Jan 22 15:49:21 2024 -0600
+
+    aqui tdo bien
+
+[33mcommit 08943cf68d159d4e27e1936906de675d6ff70181[m
+Author: Jeffrey Mardoqueo <jeffreymardoqueo260@gmail.com>
+Date:   Wed Jan 17 20:48:32 2024 -0600
+
+    aqui no se que desvergue hice pero funciona
+
+[33mcommit f96716b638a92c2756fa326534bded8c80f24e6c[m
+Author: Jeffrey Mardoqueo <jeffreymardoqueo260@gmail.com>
+Date:   Tue Jan 16 10:57:47 2024 -0600
+
+    pages de no encontrado listo
+
+[33mcommit bba35e843ffef0d9d99639a2645a5c34077cc6f8[m
+Author: Jeffrey Mardoqueo <jeffreymardoqueo260@gmail.com>
+Date:   Tue Jan 16 09:10:36 2024 -0600
+
+    ERROR PAGUES
+
+[33mcommit 428ccd734894db9257799444ee6c3e421e8e2ffe[m
+Author: Jeffrey Mardoqueo <jeffreymardoqueo260@gmail.com>
+Date:   Mon Jan 15 20:41:49 2024 -0600
+
+    Cambiar la funcion
+
+[33mcommit 455a0a21bf583a860e6e2dc8f13207b4e817b253[m
+Author: Jeffrey Mardoqueo <jeffreymardoqueo260@gmail.com>
+Date:   Mon Jan 15 20:38:33 2024 -0600
+
+    Aqui si va bien
+
+[33mcommit bb65d4ab4340f8a0da3079a187a37cea1e2e23b6[m
+Author: Jeffrey Mardoqueo <jeffreymardoqueo260@gmail.com>
+Date:   Mon Jan 15 18:39:04 2024 -0600
+
+    AQUI TODO BIEN
+
+[33mcommit 490fb695072d40e370e864393e3cd33a91e080dd[m
+Author: Jeffrey Mardoqueo <jeffreymardoqueo260@gmail.com>
+Date:   Mon Jan 15 12:50:07 2024 -0600
+
+    AHORITA LA SECCION DEL BUSCADOR ESTA LISTA
+
+[33mcommit 03f1b7c9a22be66763db3b14a8f40b7609758896[m
+Author: Jeffrey Mardoqueo <jeffreymardoqueo260@gmail.com>
+Date:   Sun Jan 14 20:39:12 2024 -0600
+
+    AQUI SIGUE TODO BIEN
+
+[33mcommit 5f1209f76cd456196e51fd14b7142fa576c70cdb[m
+Author: Jeffrey Mardoqueo <jeffreymardoqueo260@gmail.com>
+Date:   Sun Jan 14 17:16:03 2024 -0600
+
+    Ya funciona el buscador, claro que siiiiiiiiiiiii
+
+[33mcommit eafeee955888cde28d979d74b2e5b07a33dc9d6a[m
+Author: Jeffrey Mardoqueo <jeffreymardoqueo260@gmail.com>
+Date:   Sun Jan 14 16:43:53 2024 -0600
+
+    Aqui esta todo bien la parte del buscador y el result
+
+[33mcommit ab9fa4074a95844ac604fd94157febbd2e30884a[m
+Author: Jeffrey Mardoqueo <jeffreymardoqueo260@gmail.com>
+Date:   Sun Jan 14 15:59:58 2024 -0600
+
+    AQui todo esta ibien, voy a unifr o fucionar los componentes de result, en caso de equivocarme, regresar aqui
+
+[33mcommit 5f90b3f4dbdd096037f15410dfba58fa68c5b23c[m
+Author: Jeffrey Mardoqueo <jeffreymardoque

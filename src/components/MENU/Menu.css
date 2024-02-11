@@ -106,18 +106,6 @@ ul.show-menu {
     display: none;
 }
 
-/* Resto de tus estilos */
-
-@media (max-width: 952px) {
-    .enlace {
-        padding-left: 20px;
-    }
-
-    nav ul li a {
-        font-size: 16px;
-    }
-}
-
 @media (max-width: 858px) {
     .checkbtn {
         display: block;
