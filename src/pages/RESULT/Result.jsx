@@ -29,7 +29,7 @@ const Result = () => {
     const alumno = state.alumno;
 
     const handleClick = () => {
-        navigate('/data/Tablas');
+        navigate('/result/Tablas');
         // navigate('/Layout')
     };
     return (

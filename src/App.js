@@ -12,35 +12,18 @@ import Menu from './components/MENU/Menu';
 
 function App() {
   return (
-    <Router>hg t
-      <AppContent />
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<BuscadorPage />} />
+          <Route path="/result" element={<ResultPage />} />
+          <Route path="/result/Tablas" element={<TablaPage />} />
+          <Route path="/result/Contacto" element={<Contacto />} />
+          <Route path="/result/InformacionColegio" element={<InforCole />} />
+          <Route path='/NoEncontrado' element={<ErrorPages />} />
+        </Routes>
+      </div>
     </Router>
-  );
-}
-
-function AppContent() {
-  const location = useLocation();
-  const [showMenu, setShowMenu] = useState(true);
-
-  useEffect(() => {
-    // Ocultar el menú en rutas "/result" y "/data/Tablas", mostrarlo en el resto
-    setShowMenu(!["/result", "/data/Tablas"].includes(location.pathname));
-  }, [location]);
-
-  return (
-    <div className="App">
-      {showMenu && <Menu />} {/* Renderizar el menú solo si showMenu es true */}
-      <Routes>
-        <Route path="/" element={<BuscadorPage />} />
-        <Route path="/result" element={<ResultPage />} />
-        <Route path="/data/">
-          <Route path="/data/Tablas" element={<TablaPage />} />
-          <Route path="/data/Contacto" element={<Contacto />} />
-          <Route path="/data/InformacionColegio" element={<InforCole />} />
-        </Route>
-        <Route path='/NoEncontrado' element={<ErrorPages />} />
-      </Routes>
-    </div>
   );
 }
 
