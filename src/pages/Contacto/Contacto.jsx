@@ -4,7 +4,6 @@ import './Contacto.css'
 const Contacto = () => {
     return (
         <div>
-            <Menu />
             <div className='conti'>
                 <div className='izquierda'>
                 </div>
