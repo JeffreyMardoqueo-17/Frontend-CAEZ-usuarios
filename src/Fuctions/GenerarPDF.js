@@ -1,6 +1,8 @@
 import { jsPDF } from "jspdf";
 import 'jspdf-autotable';
 
+/*ESTA ES UNA FUNSION QUE LO QUE HACE ES GENERAR UN PDF, CON LOS DATOS QUE LES PASEMOS 
+COMO LO SON LOS HEADERS Y LA DATA*/
 const GenerarPDF = (titulo, columnas, data, nombreArchivo) => {
     const doc = new jsPDF();
     doc.text(titulo, 95, 20); // Ubicación del título
