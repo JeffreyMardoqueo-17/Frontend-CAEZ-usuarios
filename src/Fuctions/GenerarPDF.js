@@ -18,4 +18,4 @@ const GenerarPDF = (titulo, columnas, data, nombreArchivo) => {
     // Guardar el PDF con el nombre proporcionado
     doc.save(`${nombreArchivo}, ${fechaActual.getDate()}-${fechaActual.getMonth() + 1}-${fechaActual.getFullYear()}.pdf`);
 };
-export default generarPDF;
+export default GenerarPDF;
